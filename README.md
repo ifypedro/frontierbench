@@ -62,6 +62,74 @@
 
 # \# Benchmark Coverage
 
+## Current Evaluation Status
+
+FrontierBench v1.0 currently contains:
+
+- 125 benchmark questions
+- 5 evaluation domains
+- 110 distinct skills
+- 125 question-specific rubrics
+- 4 evaluation dimensions
+- A complete evaluation, grading, analysis, and visualization pipeline
+
+### Pipeline Validation
+
+## Pipeline Validation Results
+
+The full 125-question benchmark was processed successfully through the evaluation pipeline.
+
+| Domain | Questions | Average Score | Percentage |
+|---|---:|---:|---:|
+| Science | 25 | 3.25/4 | 81.25% |
+| Healthcare | 25 | 3.15/4 | 78.75% |
+| Finance | 25 | 2.99/4 | 74.75% |
+| Legal | 25 | 2.79/4 | 69.75% |
+| Software | 25 | 2.35/4 | 58.75% |
+| **Overall** | **125** | **2.91/4** | **72.75%** |
+
+**Strongest domain:** Science  
+**Weakest domain:** Software
+
+> These figures represent pipeline validation using mock model responses and should not be interpreted as benchmark results for a real AI model, mock model was implemented for product key reasons
+
+
+visualizations/
+├── domain_performance.png
+├── skill_performance.png
+├── score_distribution.png
+├── evaluation_dimensions.png
+├── domain_summary.csv
+├── skill_summary.csv
+├── dimension_summary.csv
+
+## Visualizations
+
+### Domain Performance
+
+![Domain Performance](visualizations/domain_performance.png)
+
+### Skill Performance
+
+![Skill Performance](visualizations/skill_performance.png)
+
+### Score Distribution
+
+![Score Distribution](visualizations/score_distribution.png)
+
+### Evaluation Dimensions
+
+![Evaluation Dimensions](visualizations/evaluation_dimensions.png)
+
+
+The complete benchmark pipeline has been successfully executed locally across all 125 questions.
+
+The current repository includes **mock evaluation outputs used to validate the pipeline**, because live frontier-model API evaluation requires an API service with available usage credits.
+
+Therefore, the current 72.75% aggregate score should be interpreted as a **pipeline/grading validation result, not a verified score for a specific frontier model**.
+
+The benchmark is structured so that real model responses can be evaluated using the same pipeline when live model access is available.
+
 # 
 
 # FrontierBench currently contains:
@@ -305,20 +373,22 @@
 &#x20;                Benchmark Reports
 
 
-# Author
-===
+## Author
 
-# 
+**Onwubuya Ifeanyi Pedro (PEDROTECH)**
 
-# \*\*Onwubuya Ifeanyi Pedro (PEDROTECH)\*\*
+Data Analyst | Python Developer | AI Evaluation | Data Visualization
 
-# 
-
-# Data Analyst | Python Developer | AI Evaluation | Data Visualization
-
-# 
+This project was developed for the **Eval Hackathon: "Build evals that expose frontier models' limits."** It also forms part of my practical portfolio, demonstrating how Python programming, data analysis, AI evaluation, and data visualization can be combined to build a structured and reproducible evaluation workflow.
 
 This project was developed for the \*\*Eval Hackathon: "Build evals that expose frontier models' limits."\*\* It also forms part of my practical portfolio, demonstrating how Python programming, data analysis, AI evaluation, and data visualization can be combined to build a structured and reproducible evaluation workflow.
 
 ===
 
+## Reproducibility
+
+Clone the repository:
+
+```bash
+git clone https://github.com/ifypedro/frontierbench.git
+cd frontierbench
