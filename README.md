@@ -232,12 +232,15 @@ python src/visualization.py --input results/graded_results.jsonl --output visual
 > **Note:** The published validation results use mock evaluation mode. Live frontier-model evaluation requires an API service with available usage credits.
 
 
+---
+
+
 ## Author
-> **Onwubuya Ifeanyi Pedro (PEDROTECH)**  
->
-> Data Analyst | Python Developer | AI Evaluation | Data Visualization  
->
-> This project was developed for the **Eval Hackathon: "Build evals that expose frontier models' limits."** It also forms part of my practical portfolio, demonstrating how Python programming, data analysis, AI evaluation, and data visualization can be combined to build a structured and reproducible evaluation workflow.
+
+**Onwubuya Ifeanyi Pedro (PEDROTECH)**
+
+Data Analyst | Python Developer | AI Evaluation | Data Visualization
+This project was developed for the **Eval Hackathon: "Build evals that expose frontier models' limits."** It also forms part of my practical portfolio, demonstrating how Python programming, data analysis, AI evaluation, and data visualization can be combined to build a structured and reproducible evaluation workflow.
 
 ```
 
