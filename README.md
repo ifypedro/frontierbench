@@ -392,3 +392,30 @@ Clone the repository:
 ```bash
 git clone https://github.com/ifypedro/frontierbench.git
 cd frontierbench
+
+Install dependencies:
+
+pip install -r requirements.txt
+
+Build question-specific rubrics:
+
+python src/build_rubrics.py
+
+Run evaluation in mock mode:
+
+python src/run_evaluation.py --model gpt-5.6-sol --data data/all_benchmarks.jsonl --mock
+
+Grade responses:
+
+python src/grading.py --input results/raw_results.jsonl --rubric data/benchmark_rubrics.json --output results/graded_results.jsonl
+
+Analyze results:
+
+python src/analysis.py --input results/graded_results.jsonl --output results/analysis_summary.json
+
+Generate visualizations:
+
+python src/visualization.py --input results/graded_results.jsonl --output visualizations
+
+
+Note: The current published evaluation results were generated using the project's mock evaluation mode for pipeline validation. Live frontier-model evaluation requires an API with available credits
