@@ -1,32 +1,16 @@
-#  FrontierBench
-
-
+# FrontierBench
 
 # # AI Reasoning Evaluation Across High-Stakes Domains
 
-
-
 # FrontierBench is an AI evaluation and benchmarking framework designed to investigate how AI systems perform across demanding reasoning tasks in Software Engineering, Finance, Legal Reasoning, Healthcare, and Science.
 
-
-
 # The project provides a reproducible pipeline for creating benchmark questions, generating model responses, applying question-specific evaluation rubrics, analyzing performance, and producing visual reports.
-
-
 
 # > Current status: FrontierBench v1.0 contains 125 benchmark questions, 125 question-specific rubrics, 110 distinct skills, and a complete evaluation, grading, analysis, and visualization pipeline.
 
 
 
-
-
-
-
 # --
-
-
-
-
 
 
 
@@ -34,15 +18,7 @@
 
 
 
-
-
-
-
 # AI systems can perform exceptionally well on many general tasks while still struggling with complex reasoning, uncertainty, domain-specific constraints, and high-stakes decision making.
-
-
-
-
 
 
 
@@ -50,15 +26,7 @@
 
 
 
-
-
-
-
 # Instead of evaluating AI using a single general score, the benchmark separates performance across multiple domains and reasoning skills.
-
-
-
-
 
 
 
@@ -66,35 +34,27 @@
 
 
 
+# Where does an AI system reason well?
 
 
 
-
-#  Where does an AI system reason well?
-
-
-
-#  Which domains expose weaknesses?
+# Which domains expose weaknesses?
 
 
 
-#  How does performance vary across different skills?
+# How does performance vary across different skills?
 
 
 
-#  Does a response acknowledge uncertainty appropriately?
+# Does a response acknowledge uncertainty appropriately?
 
 
 
-#  Does the model make unsupported claims?
+# Does the model make unsupported claims?
 
 
 
-#  How consistent is performance across different reasoning tasks?
-
-
-
-
+# How consistent is performance across different reasoning tasks?
 
 
 
@@ -102,11 +62,7 @@
 
 
 
-
-
-
-
-#  Benchmark Coverage
+# Benchmark Coverage
 
 
 
@@ -157,16 +113,13 @@ The complete 125-question benchmark has been processed through the FrontierBench
 The pipeline successfully completed:
 
 1. Benchmark question loading
-
 2. Model response generation
-
 3. Question-specific rubric application
-
 4. Response grading
-
 5. Performance analysis
-
 6. Visualization generation
+
+
 
 ### Pipeline Validation Results
 
@@ -200,21 +153,23 @@ Live model evaluation can use the same pipeline when a model API with available 
 
 ## Visualizations
 
+
+
 ### Domain Performance
 
-![Domain Performance](visualizations/domain_performance.png)
+Domain Performance
 
 ### Skill Performance
 
-![Skill Performance](visualizations/skill_performance.png)
+Skill Performance
 
 ### Score Distribution
 
-![Score Distribution](visualizations/score_distribution.png)
+Score Distribution
 
 ### Evaluation Dimensions
 
-![Evaluation Dimensions](visualizations/evaluation_dimensions.png)
+Evaluation Dimensions
 
 ## ## Reproducibility
 
@@ -229,50 +184,60 @@ cd frontierbench
 Install dependencies:
 
 ```
+
 pip install -r requirements.txt
+
 ```
 
 Build question-specific rubrics:
 
 ```
+
 python src/build_rubrics.py
+
 ```
 
 Run the evaluation in mock mode:
 
 ```
+
 python src/run_evaluation.py --model gpt-5.6-sol --data data/all_benchmarks.jsonl --mock
+
 ```
 
 Grade responses:
 
 ```
+
 python src/grading.py --input results/raw_results.jsonl --rubric data/benchmark_rubrics.json --output results/graded_results.jsonl
+
 ```
 
 Analyze results:
 
 ```
+
 python src/analysis.py --input results/graded_results.jsonl --output results/analysis_summary.json
+
 ```
 
 Generate visualizations:
 
 ```
+
 python src/visualization.py --input results/graded_results.jsonl --output visualizations
+
 ```
 
 > **Note:** The published validation results use mock evaluation mode. Live frontier-model evaluation requires an API service with available usage credits.
+
+
+## Author
+> **Onwubuya Ifeanyi Pedro (PEDROTECH)**  
 >
-> ```
->
-> ```markdown
-> ## Author
->
-> **Onwubuya Ifeanyi Pedro (PEDROTECH)**
->
-> Data Analyst | Python Developer | AI Evaluation | Data Visualization
+> Data Analyst | Python Developer | AI Evaluation | Data Visualization  
 >
 > This project was developed for the **Eval Hackathon: "Build evals that expose frontier models' limits."** It also forms part of my practical portfolio, demonstrating how Python programming, data analysis, AI evaluation, and data visualization can be combined to build a structured and reproducible evaluation workflow.
-> ```
+
+```
 
