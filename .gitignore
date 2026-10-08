@@ -1,0 +1,17 @@
+.env
+.env.*
+
+!.env.example
+
+__pycache__/
+*.pyc
+
+results/*.jsonl
+
+data/*_backup.json
+data/*_backup.jsonl
+data/test_*.json
+data/test_*.jsonl
+data/test_*.txt
+
+src/.env*

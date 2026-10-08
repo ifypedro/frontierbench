@@ -1,0 +1,595 @@
+{
+  "benchmark": "FrontierBench",
+  "evaluation_mode": "mock",
+  "model": "mock-model",
+  "total_questions": 125,
+  "overall": {
+    "average_score": 2.91,
+    "percentage": 72.75
+  },
+  "strongest_domains": [
+    "science"
+  ],
+  "weakest_domains": [
+    "software"
+  ],
+  "domains": {
+    "finance": {
+      "questions": 25,
+      "average_score": 2.99,
+      "percentage": 74.75
+    },
+    "healthcare": {
+      "questions": 25,
+      "average_score": 3.15,
+      "percentage": 78.75
+    },
+    "legal": {
+      "questions": 25,
+      "average_score": 2.79,
+      "percentage": 69.75
+    },
+    "science": {
+      "questions": 25,
+      "average_score": 3.25,
+      "percentage": 81.25
+    },
+    "software": {
+      "questions": 25,
+      "average_score": 2.35,
+      "percentage": 58.75
+    }
+  },
+  "skills": {
+    "accounting": {
+      "questions": 1,
+      "average_score": 3.0,
+      "percentage": 75.0
+    },
+    "agency": {
+      "questions": 1,
+      "average_score": 2.75,
+      "percentage": 68.75
+    },
+    "algorithmic reasoning": {
+      "questions": 1,
+      "average_score": 2.75,
+      "percentage": 68.75
+    },
+    "ambiguity": {
+      "questions": 1,
+      "average_score": 2.75,
+      "percentage": 68.75
+    },
+    "api_design": {
+      "questions": 1,
+      "average_score": 2.25,
+      "percentage": 56.25
+    },
+    "architecture": {
+      "questions": 1,
+      "average_score": 2.25,
+      "percentage": 56.25
+    },
+    "astronomy": {
+      "questions": 1,
+      "average_score": 3.25,
+      "percentage": 81.25
+    },
+    "backtesting": {
+      "questions": 1,
+      "average_score": 3.0,
+      "percentage": 75.0
+    },
+    "bias": {
+      "questions": 1,
+      "average_score": 3.0,
+      "percentage": 75.0
+    },
+    "biology": {
+      "questions": 3,
+      "average_score": 3.25,
+      "percentage": 81.25
+    },
+    "bonds": {
+      "questions": 1,
+      "average_score": 3.0,
+      "percentage": 75.0
+    },
+    "cash_flow": {
+      "questions": 1,
+      "average_score": 3.25,
+      "percentage": 81.25
+    },
+    "causal_inference": {
+      "questions": 1,
+      "average_score": 3.25,
+      "percentage": 81.25
+    },
+    "causation": {
+      "questions": 1,
+      "average_score": 3.25,
+      "percentage": 81.25
+    },
+    "chemistry": {
+      "questions": 3,
+      "average_score": 3.25,
+      "percentage": 81.25
+    },
+    "climate": {
+      "questions": 1,
+      "average_score": 3.25,
+      "percentage": 81.25
+    },
+    "clinical_reasoning": {
+      "questions": 1,
+      "average_score": 3.5,
+      "percentage": 87.5
+    },
+    "clinical_trials": {
+      "questions": 1,
+      "average_score": 3.25,
+      "percentage": 81.25
+    },
+    "code_generation": {
+      "questions": 1,
+      "average_score": 2.25,
+      "percentage": 56.25
+    },
+    "code_review": {
+      "questions": 1,
+      "average_score": 2.25,
+      "percentage": 56.25
+    },
+    "commodities": {
+      "questions": 1,
+      "average_score": 2.75,
+      "percentage": 68.75
+    },
+    "communication": {
+      "questions": 1,
+      "average_score": 3.0,
+      "percentage": 75.0
+    },
+    "compilers": {
+      "questions": 1,
+      "average_score": 2.5,
+      "percentage": 62.5
+    },
+    "complexity": {
+      "questions": 1,
+      "average_score": 2.25,
+      "percentage": 56.25
+    },
+    "concurrency": {
+      "questions": 1,
+      "average_score": 2.5,
+      "percentage": 62.5
+    },
+    "confounding": {
+      "questions": 1,
+      "average_score": 3.25,
+      "percentage": 81.25
+    },
+    "constitutional": {
+      "questions": 1,
+      "average_score": 2.75,
+      "percentage": 68.75
+    },
+    "consumer": {
+      "questions": 1,
+      "average_score": 2.75,
+      "percentage": 68.75
+    },
+    "contract": {
+      "questions": 2,
+      "average_score": 2.88,
+      "percentage": 72.0
+    },
+    "contracts": {
+      "questions": 1,
+      "average_score": 2.75,
+      "percentage": 68.75
+    },
+    "corporate": {
+      "questions": 1,
+      "average_score": 2.75,
+      "percentage": 68.75
+    },
+    "correlation": {
+      "questions": 1,
+      "average_score": 3.0,
+      "percentage": 75.0
+    },
+    "credit_risk": {
+      "questions": 1,
+      "average_score": 2.75,
+      "percentage": 68.75
+    },
+    "criminal_law": {
+      "questions": 1,
+      "average_score": 2.75,
+      "percentage": 68.75
+    },
+    "damages": {
+      "questions": 1,
+      "average_score": 2.75,
+      "percentage": 68.75
+    },
+    "data_privacy": {
+      "questions": 1,
+      "average_score": 3.0,
+      "percentage": 75.0
+    },
+    "data_quality": {
+      "questions": 1,
+      "average_score": 2.75,
+      "percentage": 68.75
+    },
+    "data_race": {
+      "questions": 1,
+      "average_score": 2.25,
+      "percentage": 56.25
+    },
+    "data_structures": {
+      "questions": 1,
+      "average_score": 2.5,
+      "percentage": 62.5
+    },
+    "database": {
+      "questions": 1,
+      "average_score": 2.25,
+      "percentage": 56.25
+    },
+    "debugging": {
+      "questions": 1,
+      "average_score": 2.25,
+      "percentage": 56.25
+    },
+    "decision_making": {
+      "questions": 1,
+      "average_score": 3.0,
+      "percentage": 75.0
+    },
+    "derivatives": {
+      "questions": 1,
+      "average_score": 3.0,
+      "percentage": 75.0
+    },
+    "diagnosis": {
+      "questions": 1,
+      "average_score": 3.25,
+      "percentage": 81.25
+    },
+    "diagnostic_reasoning": {
+      "questions": 1,
+      "average_score": 3.25,
+      "percentage": 81.25
+    },
+    "diagnostics": {
+      "questions": 1,
+      "average_score": 3.25,
+      "percentage": 81.25
+    },
+    "dispute_resolution": {
+      "questions": 1,
+      "average_score": 2.75,
+      "percentage": 68.75
+    },
+    "distributed_systems": {
+      "questions": 1,
+      "average_score": 2.75,
+      "percentage": 68.75
+    },
+    "dividends": {
+      "questions": 1,
+      "average_score": 3.0,
+      "percentage": 75.0
+    },
+    "drug_safety": {
+      "questions": 1,
+      "average_score": 3.25,
+      "percentage": 81.25
+    },
+    "earnings": {
+      "questions": 1,
+      "average_score": 2.75,
+      "percentage": 68.75
+    },
+    "ecology": {
+      "questions": 1,
+      "average_score": 3.25,
+      "percentage": 81.25
+    },
+    "employment": {
+      "questions": 1,
+      "average_score": 2.75,
+      "percentage": 68.75
+    },
+    "epidemiology": {
+      "questions": 1,
+      "average_score": 3.0,
+      "percentage": 75.0
+    },
+    "evidence": {
+      "questions": 3,
+      "average_score": 2.92,
+      "percentage": 73.0
+    },
+    "evolution": {
+      "questions": 1,
+      "average_score": 3.25,
+      "percentage": 81.25
+    },
+    "experimental_design": {
+      "questions": 1,
+      "average_score": 3.25,
+      "percentage": 81.25
+    },
+    "financial_reasoning": {
+      "questions": 1,
+      "average_score": 3.0,
+      "percentage": 75.0
+    },
+    "genetics": {
+      "questions": 1,
+      "average_score": 3.25,
+      "percentage": 81.25
+    },
+    "geology": {
+      "questions": 1,
+      "average_score": 3.25,
+      "percentage": 81.25
+    },
+    "guidelines": {
+      "questions": 1,
+      "average_score": 3.0,
+      "percentage": 75.0
+    },
+    "health_ai": {
+      "questions": 1,
+      "average_score": 3.0,
+      "percentage": 75.0
+    },
+    "inflation": {
+      "questions": 1,
+      "average_score": 3.25,
+      "percentage": 81.25
+    },
+    "intellectual_property": {
+      "questions": 1,
+      "average_score": 2.75,
+      "percentage": 68.75
+    },
+    "issue_spotting": {
+      "questions": 1,
+      "average_score": 3.0,
+      "percentage": 75.0
+    },
+    "jurisdiction": {
+      "questions": 1,
+      "average_score": 2.75,
+      "percentage": 68.75
+    },
+    "laboratory": {
+      "questions": 1,
+      "average_score": 3.25,
+      "percentage": 81.25
+    },
+    "legal_reasoning": {
+      "questions": 1,
+      "average_score": 2.75,
+      "percentage": 68.75
+    },
+    "legal_research": {
+      "questions": 1,
+      "average_score": 2.75,
+      "percentage": 68.75
+    },
+    "leverage": {
+      "questions": 1,
+      "average_score": 3.0,
+      "percentage": 75.0
+    },
+    "liquidity": {
+      "questions": 1,
+      "average_score": 3.0,
+      "percentage": 75.0
+    },
+    "machine_learning": {
+      "questions": 1,
+      "average_score": 2.25,
+      "percentage": 56.25
+    },
+    "macroeconomics": {
+      "questions": 1,
+      "average_score": 3.0,
+      "percentage": 75.0
+    },
+    "margin": {
+      "questions": 1,
+      "average_score": 2.75,
+      "percentage": 68.75
+    },
+    "market_structure": {
+      "questions": 1,
+      "average_score": 3.0,
+      "percentage": 75.0
+    },
+    "measurement": {
+      "questions": 1,
+      "average_score": 3.25,
+      "percentage": 81.25
+    },
+    "medical_imaging": {
+      "questions": 1,
+      "average_score": 3.25,
+      "percentage": 81.25
+    },
+    "memory": {
+      "questions": 1,
+      "average_score": 2.5,
+      "percentage": 62.5
+    },
+    "meta_analysis": {
+      "questions": 1,
+      "average_score": 3.0,
+      "percentage": 75.0
+    },
+    "negligence": {
+      "questions": 1,
+      "average_score": 2.75,
+      "percentage": 68.75
+    },
+    "networking": {
+      "questions": 1,
+      "average_score": 2.25,
+      "percentage": 56.25
+    },
+    "observability": {
+      "questions": 1,
+      "average_score": 2.5,
+      "percentage": 62.5
+    },
+    "peer_review": {
+      "questions": 1,
+      "average_score": 3.25,
+      "percentage": 81.25
+    },
+    "performance": {
+      "questions": 1,
+      "average_score": 2.25,
+      "percentage": 56.25
+    },
+    "physics": {
+      "questions": 3,
+      "average_score": 3.25,
+      "percentage": 81.25
+    },
+    "portfolio": {
+      "questions": 1,
+      "average_score": 3.0,
+      "percentage": 75.0
+    },
+    "privacy": {
+      "questions": 2,
+      "average_score": 2.88,
+      "percentage": 72.0
+    },
+    "professional_ethics": {
+      "questions": 1,
+      "average_score": 3.0,
+      "percentage": 75.0
+    },
+    "public_health": {
+      "questions": 1,
+      "average_score": 3.25,
+      "percentage": 81.25
+    },
+    "regulation": {
+      "questions": 1,
+      "average_score": 2.75,
+      "percentage": 68.75
+    },
+    "reliability": {
+      "questions": 1,
+      "average_score": 2.25,
+      "percentage": 56.25
+    },
+    "reproducibility": {
+      "questions": 1,
+      "average_score": 3.25,
+      "percentage": 81.25
+    },
+    "requirements": {
+      "questions": 1,
+      "average_score": 2.5,
+      "percentage": 62.5
+    },
+    "risk": {
+      "questions": 2,
+      "average_score": 3.25,
+      "percentage": 81.25
+    },
+    "risk_communication": {
+      "questions": 1,
+      "average_score": 3.25,
+      "percentage": 81.25
+    },
+    "risk_management": {
+      "questions": 1,
+      "average_score": 3.0,
+      "percentage": 75.0
+    },
+    "scientific_models": {
+      "questions": 1,
+      "average_score": 3.25,
+      "percentage": 81.25
+    },
+    "scientific_reasoning": {
+      "questions": 1,
+      "average_score": 3.25,
+      "percentage": 81.25
+    },
+    "screening": {
+      "questions": 1,
+      "average_score": 3.0,
+      "percentage": 75.0
+    },
+    "security": {
+      "questions": 1,
+      "average_score": 2.25,
+      "percentage": 56.25
+    },
+    "sql": {
+      "questions": 1,
+      "average_score": 2.25,
+      "percentage": 56.25
+    },
+    "statistics": {
+      "questions": 3,
+      "average_score": 3.17,
+      "percentage": 79.25
+    },
+    "survivorship_bias": {
+      "questions": 1,
+      "average_score": 3.0,
+      "percentage": 75.0
+    },
+    "technical_analysis": {
+      "questions": 2,
+      "average_score": 3.0,
+      "percentage": 75.0
+    },
+    "testing": {
+      "questions": 1,
+      "average_score": 2.25,
+      "percentage": 56.25
+    },
+    "torts": {
+      "questions": 1,
+      "average_score": 2.75,
+      "percentage": 68.75
+    },
+    "uncertainty": {
+      "questions": 2,
+      "average_score": 3.12,
+      "percentage": 78.0
+    },
+    "valuation": {
+      "questions": 1,
+      "average_score": 3.25,
+      "percentage": 81.25
+    },
+    "version_control": {
+      "questions": 1,
+      "average_score": 2.25,
+      "percentage": 56.25
+    },
+    "web_security": {
+      "questions": 1,
+      "average_score": 2.25,
+      "percentage": 56.25
+    }
+  }
+}

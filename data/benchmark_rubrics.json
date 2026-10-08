@@ -1,0 +1,2002 @@
+{
+  "SOF-001": {
+    "id": "SOF-001",
+    "domain": "software",
+    "difficulty": "hard",
+    "skill": "debugging",
+    "question": "Given `def avg(xs): return sum(xs)/len(xs)` and an empty list, identify the failure and propose a robust behavior for empty input.",
+    "evaluation_criteria": "Correctly identifies the technical issue, explains the mechanism, proposes a sound approach, and acknowledges relevant trade-offs or uncertainty.",
+    "reference_answer_points": "Assess technical correctness, mechanism, solution quality, edge cases, and trade-offs.",
+    "scoring_rubric": {
+      "4": "Fully correct, complete, well-reasoned, and appropriately qualified.",
+      "3": "Mostly correct with only minor omissions or imprecision.",
+      "2": "Partially correct with meaningful omissions or weak reasoning.",
+      "1": "Mostly incorrect or substantially incomplete.",
+      "0": "Incorrect, irrelevant, fabricated, or unsafe response."
+    }
+  },
+  "SOF-002": {
+    "id": "SOF-002",
+    "domain": "software",
+    "difficulty": "hard",
+    "skill": "algorithmic reasoning",
+    "question": "You need to find whether an integer list contains two values summing to a target. Compare an O(n^2) approach with an O(n) expected-time hash-set approach and state the trade-offs.",
+    "evaluation_criteria": "Correctly identifies the technical issue, explains the mechanism, proposes a sound approach, and acknowledges relevant trade-offs or uncertainty.",
+    "reference_answer_points": "Assess technical correctness, mechanism, solution quality, edge cases, and trade-offs.",
+    "scoring_rubric": {
+      "4": "Fully correct, complete, well-reasoned, and appropriately qualified.",
+      "3": "Mostly correct with only minor omissions or imprecision.",
+      "2": "Partially correct with meaningful omissions or weak reasoning.",
+      "1": "Mostly incorrect or substantially incomplete.",
+      "0": "Incorrect, irrelevant, fabricated, or unsafe response."
+    }
+  },
+  "SOF-003": {
+    "id": "SOF-003",
+    "domain": "software",
+    "difficulty": "hard",
+    "skill": "testing",
+    "question": "A function passes all visible unit tests but fails in production for Unicode input. Explain what this suggests about the test suite and propose a stronger test strategy.",
+    "evaluation_criteria": "Correctly identifies the technical issue, explains the mechanism, proposes a sound approach, and acknowledges relevant trade-offs or uncertainty.",
+    "reference_answer_points": "Assess technical correctness, mechanism, solution quality, edge cases, and trade-offs.",
+    "scoring_rubric": {
+      "4": "Fully correct, complete, well-reasoned, and appropriately qualified.",
+      "3": "Mostly correct with only minor omissions or imprecision.",
+      "2": "Partially correct with meaningful omissions or weak reasoning.",
+      "1": "Mostly incorrect or substantially incomplete.",
+      "0": "Incorrect, irrelevant, fabricated, or unsafe response."
+    }
+  },
+  "SOF-004": {
+    "id": "SOF-004",
+    "domain": "software",
+    "difficulty": "hard",
+    "skill": "concurrency",
+    "question": "Two threads increment a shared counter 100,000 times each without synchronization. Explain why the final value may be wrong and name two appropriate synchronization or design approaches.",
+    "evaluation_criteria": "Correctly identifies the technical issue, explains the mechanism, proposes a sound approach, and acknowledges relevant trade-offs or uncertainty.",
+    "reference_answer_points": "Assess technical correctness, mechanism, solution quality, edge cases, and trade-offs.",
+    "scoring_rubric": {
+      "4": "Fully correct, complete, well-reasoned, and appropriately qualified.",
+      "3": "Mostly correct with only minor omissions or imprecision.",
+      "2": "Partially correct with meaningful omissions or weak reasoning.",
+      "1": "Mostly incorrect or substantially incomplete.",
+      "0": "Incorrect, irrelevant, fabricated, or unsafe response."
+    }
+  },
+  "SOF-005": {
+    "id": "SOF-005",
+    "domain": "software",
+    "difficulty": "hard",
+    "skill": "database",
+    "question": "A query joins a 10-million-row fact table to a customer table and suddenly becomes much slower after a new filter is added. Give a systematic debugging plan rather than guessing at one fix.",
+    "evaluation_criteria": "Correctly identifies the technical issue, explains the mechanism, proposes a sound approach, and acknowledges relevant trade-offs or uncertainty.",
+    "reference_answer_points": "Assess technical correctness, mechanism, solution quality, edge cases, and trade-offs.",
+    "scoring_rubric": {
+      "4": "Fully correct, complete, well-reasoned, and appropriately qualified.",
+      "3": "Mostly correct with only minor omissions or imprecision.",
+      "2": "Partially correct with meaningful omissions or weak reasoning.",
+      "1": "Mostly incorrect or substantially incomplete.",
+      "0": "Incorrect, irrelevant, fabricated, or unsafe response."
+    }
+  },
+  "SOF-006": {
+    "id": "SOF-006",
+    "domain": "software",
+    "difficulty": "hard",
+    "skill": "security",
+    "question": "An application builds SQL using string concatenation from user input. Explain the vulnerability and the principle behind the preferred mitigation.",
+    "evaluation_criteria": "Correctly identifies the technical issue, explains the mechanism, proposes a sound approach, and acknowledges relevant trade-offs or uncertainty.",
+    "reference_answer_points": "Assess technical correctness, mechanism, solution quality, edge cases, and trade-offs.",
+    "scoring_rubric": {
+      "4": "Fully correct, complete, well-reasoned, and appropriately qualified.",
+      "3": "Mostly correct with only minor omissions or imprecision.",
+      "2": "Partially correct with meaningful omissions or weak reasoning.",
+      "1": "Mostly incorrect or substantially incomplete.",
+      "0": "Incorrect, irrelevant, fabricated, or unsafe response."
+    }
+  },
+  "SOF-007": {
+    "id": "SOF-007",
+    "domain": "software",
+    "difficulty": "hard",
+    "skill": "api_design",
+    "question": "An API client receives HTTP 429 responses intermittently. Design a retry policy that avoids making the overload worse.",
+    "evaluation_criteria": "Correctly identifies the technical issue, explains the mechanism, proposes a sound approach, and acknowledges relevant trade-offs or uncertainty.",
+    "reference_answer_points": "Assess technical correctness, mechanism, solution quality, edge cases, and trade-offs.",
+    "scoring_rubric": {
+      "4": "Fully correct, complete, well-reasoned, and appropriately qualified.",
+      "3": "Mostly correct with only minor omissions or imprecision.",
+      "2": "Partially correct with meaningful omissions or weak reasoning.",
+      "1": "Mostly incorrect or substantially incomplete.",
+      "0": "Incorrect, irrelevant, fabricated, or unsafe response."
+    }
+  },
+  "SOF-008": {
+    "id": "SOF-008",
+    "domain": "software",
+    "difficulty": "hard",
+    "skill": "data_structures",
+    "question": "For an LRU cache with O(1) average get and put operations, explain why a hash map alone is insufficient and what complementary structure is needed.",
+    "evaluation_criteria": "Correctly identifies the technical issue, explains the mechanism, proposes a sound approach, and acknowledges relevant trade-offs or uncertainty.",
+    "reference_answer_points": "Assess technical correctness, mechanism, solution quality, edge cases, and trade-offs.",
+    "scoring_rubric": {
+      "4": "Fully correct, complete, well-reasoned, and appropriately qualified.",
+      "3": "Mostly correct with only minor omissions or imprecision.",
+      "2": "Partially correct with meaningful omissions or weak reasoning.",
+      "1": "Mostly incorrect or substantially incomplete.",
+      "0": "Incorrect, irrelevant, fabricated, or unsafe response."
+    }
+  },
+  "SOF-009": {
+    "id": "SOF-009",
+    "domain": "software",
+    "difficulty": "hard",
+    "skill": "code_review",
+    "question": "A developer catches every exception with `except Exception: pass`. Explain two distinct risks and suggest a better error-handling pattern.",
+    "evaluation_criteria": "Correctly identifies the technical issue, explains the mechanism, proposes a sound approach, and acknowledges relevant trade-offs or uncertainty.",
+    "reference_answer_points": "Assess technical correctness, mechanism, solution quality, edge cases, and trade-offs.",
+    "scoring_rubric": {
+      "4": "Fully correct, complete, well-reasoned, and appropriately qualified.",
+      "3": "Mostly correct with only minor omissions or imprecision.",
+      "2": "Partially correct with meaningful omissions or weak reasoning.",
+      "1": "Mostly incorrect or substantially incomplete.",
+      "0": "Incorrect, irrelevant, fabricated, or unsafe response."
+    }
+  },
+  "SOF-010": {
+    "id": "SOF-010",
+    "domain": "software",
+    "difficulty": "hard",
+    "skill": "distributed_systems",
+    "question": "A payment request times out after the server may have processed it. Explain how retries can cause duplicate effects and describe an idempotency-key solution.",
+    "evaluation_criteria": "Correctly identifies the technical issue, explains the mechanism, proposes a sound approach, and acknowledges relevant trade-offs or uncertainty.",
+    "reference_answer_points": "Assess technical correctness, mechanism, solution quality, edge cases, and trade-offs.",
+    "scoring_rubric": {
+      "4": "Fully correct, complete, well-reasoned, and appropriately qualified.",
+      "3": "Mostly correct with only minor omissions or imprecision.",
+      "2": "Partially correct with meaningful omissions or weak reasoning.",
+      "1": "Mostly incorrect or substantially incomplete.",
+      "0": "Incorrect, irrelevant, fabricated, or unsafe response."
+    }
+  },
+  "SOF-011": {
+    "id": "SOF-011",
+    "domain": "software",
+    "difficulty": "hard",
+    "skill": "performance",
+    "question": "A Python program spends most of its time inside nested loops over a large dataframe. Explain how you would profile it before optimizing and name two likely vectorization strategies.",
+    "evaluation_criteria": "Correctly identifies the technical issue, explains the mechanism, proposes a sound approach, and acknowledges relevant trade-offs or uncertainty.",
+    "reference_answer_points": "Assess technical correctness, mechanism, solution quality, edge cases, and trade-offs.",
+    "scoring_rubric": {
+      "4": "Fully correct, complete, well-reasoned, and appropriately qualified.",
+      "3": "Mostly correct with only minor omissions or imprecision.",
+      "2": "Partially correct with meaningful omissions or weak reasoning.",
+      "1": "Mostly incorrect or substantially incomplete.",
+      "0": "Incorrect, irrelevant, fabricated, or unsafe response."
+    }
+  },
+  "SOF-012": {
+    "id": "SOF-012",
+    "domain": "software",
+    "difficulty": "hard",
+    "skill": "version_control",
+    "question": "Two developers changed the same lines in a Git file. Explain what a merge conflict means and a safe workflow for resolving it.",
+    "evaluation_criteria": "Correctly identifies the technical issue, explains the mechanism, proposes a sound approach, and acknowledges relevant trade-offs or uncertainty.",
+    "reference_answer_points": "Assess technical correctness, mechanism, solution quality, edge cases, and trade-offs.",
+    "scoring_rubric": {
+      "4": "Fully correct, complete, well-reasoned, and appropriately qualified.",
+      "3": "Mostly correct with only minor omissions or imprecision.",
+      "2": "Partially correct with meaningful omissions or weak reasoning.",
+      "1": "Mostly incorrect or substantially incomplete.",
+      "0": "Incorrect, irrelevant, fabricated, or unsafe response."
+    }
+  },
+  "SOF-013": {
+    "id": "SOF-013",
+    "domain": "software",
+    "difficulty": "hard",
+    "skill": "web_security",
+    "question": "Explain the difference between authentication and authorization and give one example of a bug caused by confusing them.",
+    "evaluation_criteria": "Correctly identifies the technical issue, explains the mechanism, proposes a sound approach, and acknowledges relevant trade-offs or uncertainty.",
+    "reference_answer_points": "Assess technical correctness, mechanism, solution quality, edge cases, and trade-offs.",
+    "scoring_rubric": {
+      "4": "Fully correct, complete, well-reasoned, and appropriately qualified.",
+      "3": "Mostly correct with only minor omissions or imprecision.",
+      "2": "Partially correct with meaningful omissions or weak reasoning.",
+      "1": "Mostly incorrect or substantially incomplete.",
+      "0": "Incorrect, irrelevant, fabricated, or unsafe response."
+    }
+  },
+  "SOF-014": {
+    "id": "SOF-014",
+    "domain": "software",
+    "difficulty": "hard",
+    "skill": "memory",
+    "question": "A service's memory usage grows over several hours and does not fall after requests finish. Give a diagnostic approach that distinguishes a true leak from caching or normal allocator behavior.",
+    "evaluation_criteria": "Correctly identifies the technical issue, explains the mechanism, proposes a sound approach, and acknowledges relevant trade-offs or uncertainty.",
+    "reference_answer_points": "Assess technical correctness, mechanism, solution quality, edge cases, and trade-offs.",
+    "scoring_rubric": {
+      "4": "Fully correct, complete, well-reasoned, and appropriately qualified.",
+      "3": "Mostly correct with only minor omissions or imprecision.",
+      "2": "Partially correct with meaningful omissions or weak reasoning.",
+      "1": "Mostly incorrect or substantially incomplete.",
+      "0": "Incorrect, irrelevant, fabricated, or unsafe response."
+    }
+  },
+  "SOF-015": {
+    "id": "SOF-015",
+    "domain": "software",
+    "difficulty": "hard",
+    "skill": "architecture",
+    "question": "When would a modular monolith be preferable to microservices for a new product? Give at least three considerations.",
+    "evaluation_criteria": "Correctly identifies the technical issue, explains the mechanism, proposes a sound approach, and acknowledges relevant trade-offs or uncertainty.",
+    "reference_answer_points": "Assess technical correctness, mechanism, solution quality, edge cases, and trade-offs.",
+    "scoring_rubric": {
+      "4": "Fully correct, complete, well-reasoned, and appropriately qualified.",
+      "3": "Mostly correct with only minor omissions or imprecision.",
+      "2": "Partially correct with meaningful omissions or weak reasoning.",
+      "1": "Mostly incorrect or substantially incomplete.",
+      "0": "Incorrect, irrelevant, fabricated, or unsafe response."
+    }
+  },
+  "SOF-016": {
+    "id": "SOF-016",
+    "domain": "software",
+    "difficulty": "hard",
+    "skill": "sql",
+    "question": "Explain why `LEFT JOIN` followed by a `WHERE` condition on the right table can unexpectedly behave like an inner join.",
+    "evaluation_criteria": "Correctly identifies the technical issue, explains the mechanism, proposes a sound approach, and acknowledges relevant trade-offs or uncertainty.",
+    "reference_answer_points": "Assess technical correctness, mechanism, solution quality, edge cases, and trade-offs.",
+    "scoring_rubric": {
+      "4": "Fully correct, complete, well-reasoned, and appropriately qualified.",
+      "3": "Mostly correct with only minor omissions or imprecision.",
+      "2": "Partially correct with meaningful omissions or weak reasoning.",
+      "1": "Mostly incorrect or substantially incomplete.",
+      "0": "Incorrect, irrelevant, fabricated, or unsafe response."
+    }
+  },
+  "SOF-017": {
+    "id": "SOF-017",
+    "domain": "software",
+    "difficulty": "hard",
+    "skill": "data_race",
+    "question": "Two workers read the same inventory quantity of 1 and both decide they can sell the item. Explain the race and one database-level prevention strategy.",
+    "evaluation_criteria": "Correctly identifies the technical issue, explains the mechanism, proposes a sound approach, and acknowledges relevant trade-offs or uncertainty.",
+    "reference_answer_points": "Assess technical correctness, mechanism, solution quality, edge cases, and trade-offs.",
+    "scoring_rubric": {
+      "4": "Fully correct, complete, well-reasoned, and appropriately qualified.",
+      "3": "Mostly correct with only minor omissions or imprecision.",
+      "2": "Partially correct with meaningful omissions or weak reasoning.",
+      "1": "Mostly incorrect or substantially incomplete.",
+      "0": "Incorrect, irrelevant, fabricated, or unsafe response."
+    }
+  },
+  "SOF-018": {
+    "id": "SOF-018",
+    "domain": "software",
+    "difficulty": "hard",
+    "skill": "machine_learning",
+    "question": "A classifier has 98% accuracy on a dataset where only 1% of examples are positive. Explain why accuracy is misleading and identify better metrics.",
+    "evaluation_criteria": "Correctly identifies the technical issue, explains the mechanism, proposes a sound approach, and acknowledges relevant trade-offs or uncertainty.",
+    "reference_answer_points": "Assess technical correctness, mechanism, solution quality, edge cases, and trade-offs.",
+    "scoring_rubric": {
+      "4": "Fully correct, complete, well-reasoned, and appropriately qualified.",
+      "3": "Mostly correct with only minor omissions or imprecision.",
+      "2": "Partially correct with meaningful omissions or weak reasoning.",
+      "1": "Mostly incorrect or substantially incomplete.",
+      "0": "Incorrect, irrelevant, fabricated, or unsafe response."
+    }
+  },
+  "SOF-019": {
+    "id": "SOF-019",
+    "domain": "software",
+    "difficulty": "hard",
+    "skill": "reliability",
+    "question": "A service has a 99.9% monthly availability target. Explain what this means operationally and why a single aggregate percentage can hide important failure patterns.",
+    "evaluation_criteria": "Correctly identifies the technical issue, explains the mechanism, proposes a sound approach, and acknowledges relevant trade-offs or uncertainty.",
+    "reference_answer_points": "Assess technical correctness, mechanism, solution quality, edge cases, and trade-offs.",
+    "scoring_rubric": {
+      "4": "Fully correct, complete, well-reasoned, and appropriately qualified.",
+      "3": "Mostly correct with only minor omissions or imprecision.",
+      "2": "Partially correct with meaningful omissions or weak reasoning.",
+      "1": "Mostly incorrect or substantially incomplete.",
+      "0": "Incorrect, irrelevant, fabricated, or unsafe response."
+    }
+  },
+  "SOF-020": {
+    "id": "SOF-020",
+    "domain": "software",
+    "difficulty": "hard",
+    "skill": "code_generation",
+    "question": "An AI-generated function looks correct but lacks input validation and error handling. Describe a review checklist you would apply before merging it.",
+    "evaluation_criteria": "Correctly identifies the technical issue, explains the mechanism, proposes a sound approach, and acknowledges relevant trade-offs or uncertainty.",
+    "reference_answer_points": "Assess technical correctness, mechanism, solution quality, edge cases, and trade-offs.",
+    "scoring_rubric": {
+      "4": "Fully correct, complete, well-reasoned, and appropriately qualified.",
+      "3": "Mostly correct with only minor omissions or imprecision.",
+      "2": "Partially correct with meaningful omissions or weak reasoning.",
+      "1": "Mostly incorrect or substantially incomplete.",
+      "0": "Incorrect, irrelevant, fabricated, or unsafe response."
+    }
+  },
+  "SOF-021": {
+    "id": "SOF-021",
+    "domain": "software",
+    "difficulty": "hard",
+    "skill": "compilers",
+    "question": "Explain at a high level why a compiler may reject code that appears logically correct to a programmer.",
+    "evaluation_criteria": "Correctly identifies the technical issue, explains the mechanism, proposes a sound approach, and acknowledges relevant trade-offs or uncertainty.",
+    "reference_answer_points": "Assess technical correctness, mechanism, solution quality, edge cases, and trade-offs.",
+    "scoring_rubric": {
+      "4": "Fully correct, complete, well-reasoned, and appropriately qualified.",
+      "3": "Mostly correct with only minor omissions or imprecision.",
+      "2": "Partially correct with meaningful omissions or weak reasoning.",
+      "1": "Mostly incorrect or substantially incomplete.",
+      "0": "Incorrect, irrelevant, fabricated, or unsafe response."
+    }
+  },
+  "SOF-022": {
+    "id": "SOF-022",
+    "domain": "software",
+    "difficulty": "hard",
+    "skill": "complexity",
+    "question": "A recursive algorithm branches into two calls at each level and has depth n. Explain why its naive time complexity can become exponential.",
+    "evaluation_criteria": "Correctly identifies the technical issue, explains the mechanism, proposes a sound approach, and acknowledges relevant trade-offs or uncertainty.",
+    "reference_answer_points": "Assess technical correctness, mechanism, solution quality, edge cases, and trade-offs.",
+    "scoring_rubric": {
+      "4": "Fully correct, complete, well-reasoned, and appropriately qualified.",
+      "3": "Mostly correct with only minor omissions or imprecision.",
+      "2": "Partially correct with meaningful omissions or weak reasoning.",
+      "1": "Mostly incorrect or substantially incomplete.",
+      "0": "Incorrect, irrelevant, fabricated, or unsafe response."
+    }
+  },
+  "SOF-023": {
+    "id": "SOF-023",
+    "domain": "software",
+    "difficulty": "hard",
+    "skill": "networking",
+    "question": "A web page works locally but fails intermittently in production with connection timeouts. List the layers you would investigate before changing application logic.",
+    "evaluation_criteria": "Correctly identifies the technical issue, explains the mechanism, proposes a sound approach, and acknowledges relevant trade-offs or uncertainty.",
+    "reference_answer_points": "Assess technical correctness, mechanism, solution quality, edge cases, and trade-offs.",
+    "scoring_rubric": {
+      "4": "Fully correct, complete, well-reasoned, and appropriately qualified.",
+      "3": "Mostly correct with only minor omissions or imprecision.",
+      "2": "Partially correct with meaningful omissions or weak reasoning.",
+      "1": "Mostly incorrect or substantially incomplete.",
+      "0": "Incorrect, irrelevant, fabricated, or unsafe response."
+    }
+  },
+  "SOF-024": {
+    "id": "SOF-024",
+    "domain": "software",
+    "difficulty": "hard",
+    "skill": "observability",
+    "question": "Distinguish logs, metrics, and traces, and explain a situation where each provides the most useful evidence.",
+    "evaluation_criteria": "Correctly identifies the technical issue, explains the mechanism, proposes a sound approach, and acknowledges relevant trade-offs or uncertainty.",
+    "reference_answer_points": "Assess technical correctness, mechanism, solution quality, edge cases, and trade-offs.",
+    "scoring_rubric": {
+      "4": "Fully correct, complete, well-reasoned, and appropriately qualified.",
+      "3": "Mostly correct with only minor omissions or imprecision.",
+      "2": "Partially correct with meaningful omissions or weak reasoning.",
+      "1": "Mostly incorrect or substantially incomplete.",
+      "0": "Incorrect, irrelevant, fabricated, or unsafe response."
+    }
+  },
+  "SOF-025": {
+    "id": "SOF-025",
+    "domain": "software",
+    "difficulty": "hard",
+    "skill": "requirements",
+    "question": "A product requirement says 'the dashboard should be fast.' Explain why this is insufficient and rewrite it as a testable requirement.",
+    "evaluation_criteria": "Correctly identifies the technical issue, explains the mechanism, proposes a sound approach, and acknowledges relevant trade-offs or uncertainty.",
+    "reference_answer_points": "Assess technical correctness, mechanism, solution quality, edge cases, and trade-offs.",
+    "scoring_rubric": {
+      "4": "Fully correct, complete, well-reasoned, and appropriately qualified.",
+      "3": "Mostly correct with only minor omissions or imprecision.",
+      "2": "Partially correct with meaningful omissions or weak reasoning.",
+      "1": "Mostly incorrect or substantially incomplete.",
+      "0": "Incorrect, irrelevant, fabricated, or unsafe response."
+    }
+  },
+  "FIN-001": {
+    "id": "FIN-001",
+    "domain": "finance",
+    "difficulty": "hard",
+    "skill": "financial_reasoning",
+    "question": "A company reports 30% revenue growth while operating cash flow falls 15%. What can and cannot be concluded from these figures alone?",
+    "evaluation_criteria": "Uses financially sound reasoning, distinguishes what follows from the evidence from what does not, and avoids unsupported investment conclusions.",
+    "reference_answer_points": "Assess financial reasoning, evidence versus inference, risk awareness, and avoidance of unsupported investment conclusions.",
+    "scoring_rubric": {
+      "4": "Fully correct, complete, well-reasoned, and appropriately qualified.",
+      "3": "Mostly correct with only minor omissions or imprecision.",
+      "2": "Partially correct with meaningful omissions or weak reasoning.",
+      "1": "Mostly incorrect or substantially incomplete.",
+      "0": "Incorrect, irrelevant, fabricated, or unsafe response."
+    }
+  },
+  "FIN-002": {
+    "id": "FIN-002",
+    "domain": "finance",
+    "difficulty": "hard",
+    "skill": "valuation",
+    "question": "Explain why a stock can be cheap on a P/E ratio yet still be a poor investment.",
+    "evaluation_criteria": "Uses financially sound reasoning, distinguishes what follows from the evidence from what does not, and avoids unsupported investment conclusions.",
+    "reference_answer_points": "Assess financial reasoning, evidence versus inference, risk awareness, and avoidance of unsupported investment conclusions.",
+    "scoring_rubric": {
+      "4": "Fully correct, complete, well-reasoned, and appropriately qualified.",
+      "3": "Mostly correct with only minor omissions or imprecision.",
+      "2": "Partially correct with meaningful omissions or weak reasoning.",
+      "1": "Mostly incorrect or substantially incomplete.",
+      "0": "Incorrect, irrelevant, fabricated, or unsafe response."
+    }
+  },
+  "FIN-003": {
+    "id": "FIN-003",
+    "domain": "finance",
+    "difficulty": "hard",
+    "skill": "accounting",
+    "question": "A company buys equipment for cash. Explain the immediate effects on the balance sheet and why the purchase is not normally recorded as an immediate full expense.",
+    "evaluation_criteria": "Uses financially sound reasoning, distinguishes what follows from the evidence from what does not, and avoids unsupported investment conclusions.",
+    "reference_answer_points": "Assess financial reasoning, evidence versus inference, risk awareness, and avoidance of unsupported investment conclusions.",
+    "scoring_rubric": {
+      "4": "Fully correct, complete, well-reasoned, and appropriately qualified.",
+      "3": "Mostly correct with only minor omissions or imprecision.",
+      "2": "Partially correct with meaningful omissions or weak reasoning.",
+      "1": "Mostly incorrect or substantially incomplete.",
+      "0": "Incorrect, irrelevant, fabricated, or unsafe response."
+    }
+  },
+  "FIN-004": {
+    "id": "FIN-004",
+    "domain": "finance",
+    "difficulty": "hard",
+    "skill": "risk",
+    "question": "An investor holds five stocks from the same industry. Explain why owning five securities does not necessarily provide strong diversification.",
+    "evaluation_criteria": "Uses financially sound reasoning, distinguishes what follows from the evidence from what does not, and avoids unsupported investment conclusions.",
+    "reference_answer_points": "Assess financial reasoning, evidence versus inference, risk awareness, and avoidance of unsupported investment conclusions.",
+    "scoring_rubric": {
+      "4": "Fully correct, complete, well-reasoned, and appropriately qualified.",
+      "3": "Mostly correct with only minor omissions or imprecision.",
+      "2": "Partially correct with meaningful omissions or weak reasoning.",
+      "1": "Mostly incorrect or substantially incomplete.",
+      "0": "Incorrect, irrelevant, fabricated, or unsafe response."
+    }
+  },
+  "FIN-005": {
+    "id": "FIN-005",
+    "domain": "finance",
+    "difficulty": "hard",
+    "skill": "bonds",
+    "question": "Explain the typical relationship between market interest rates and the prices of existing fixed-rate bonds.",
+    "evaluation_criteria": "Uses financially sound reasoning, distinguishes what follows from the evidence from what does not, and avoids unsupported investment conclusions.",
+    "reference_answer_points": "Assess financial reasoning, evidence versus inference, risk awareness, and avoidance of unsupported investment conclusions.",
+    "scoring_rubric": {
+      "4": "Fully correct, complete, well-reasoned, and appropriately qualified.",
+      "3": "Mostly correct with only minor omissions or imprecision.",
+      "2": "Partially correct with meaningful omissions or weak reasoning.",
+      "1": "Mostly incorrect or substantially incomplete.",
+      "0": "Incorrect, irrelevant, fabricated, or unsafe response."
+    }
+  },
+  "FIN-006": {
+    "id": "FIN-006",
+    "domain": "finance",
+    "difficulty": "hard",
+    "skill": "inflation",
+    "question": "A nominal investment return is 8% while inflation is 5%. Explain the distinction between nominal and approximate real return.",
+    "evaluation_criteria": "Uses financially sound reasoning, distinguishes what follows from the evidence from what does not, and avoids unsupported investment conclusions.",
+    "reference_answer_points": "Assess financial reasoning, evidence versus inference, risk awareness, and avoidance of unsupported investment conclusions.",
+    "scoring_rubric": {
+      "4": "Fully correct, complete, well-reasoned, and appropriately qualified.",
+      "3": "Mostly correct with only minor omissions or imprecision.",
+      "2": "Partially correct with meaningful omissions or weak reasoning.",
+      "1": "Mostly incorrect or substantially incomplete.",
+      "0": "Incorrect, irrelevant, fabricated, or unsafe response."
+    }
+  },
+  "FIN-007": {
+    "id": "FIN-007",
+    "domain": "finance",
+    "difficulty": "hard",
+    "skill": "cash_flow",
+    "question": "A profitable company reports negative free cash flow for one year. Give several legitimate explanations and explain why profit alone does not determine cash generation.",
+    "evaluation_criteria": "Uses financially sound reasoning, distinguishes what follows from the evidence from what does not, and avoids unsupported investment conclusions.",
+    "reference_answer_points": "Assess financial reasoning, evidence versus inference, risk awareness, and avoidance of unsupported investment conclusions.",
+    "scoring_rubric": {
+      "4": "Fully correct, complete, well-reasoned, and appropriately qualified.",
+      "3": "Mostly correct with only minor omissions or imprecision.",
+      "2": "Partially correct with meaningful omissions or weak reasoning.",
+      "1": "Mostly incorrect or substantially incomplete.",
+      "0": "Incorrect, irrelevant, fabricated, or unsafe response."
+    }
+  },
+  "FIN-008": {
+    "id": "FIN-008",
+    "domain": "finance",
+    "difficulty": "hard",
+    "skill": "leverage",
+    "question": "Explain how financial leverage can amplify both gains and losses for shareholders.",
+    "evaluation_criteria": "Uses financially sound reasoning, distinguishes what follows from the evidence from what does not, and avoids unsupported investment conclusions.",
+    "reference_answer_points": "Assess financial reasoning, evidence versus inference, risk awareness, and avoidance of unsupported investment conclusions.",
+    "scoring_rubric": {
+      "4": "Fully correct, complete, well-reasoned, and appropriately qualified.",
+      "3": "Mostly correct with only minor omissions or imprecision.",
+      "2": "Partially correct with meaningful omissions or weak reasoning.",
+      "1": "Mostly incorrect or substantially incomplete.",
+      "0": "Incorrect, irrelevant, fabricated, or unsafe response."
+    }
+  },
+  "FIN-009": {
+    "id": "FIN-009",
+    "domain": "finance",
+    "difficulty": "hard",
+    "skill": "portfolio",
+    "question": "Two assets have the same expected return and volatility, but their returns have a low correlation. Explain why combining them may improve portfolio risk characteristics.",
+    "evaluation_criteria": "Uses financially sound reasoning, distinguishes what follows from the evidence from what does not, and avoids unsupported investment conclusions.",
+    "reference_answer_points": "Assess financial reasoning, evidence versus inference, risk awareness, and avoidance of unsupported investment conclusions.",
+    "scoring_rubric": {
+      "4": "Fully correct, complete, well-reasoned, and appropriately qualified.",
+      "3": "Mostly correct with only minor omissions or imprecision.",
+      "2": "Partially correct with meaningful omissions or weak reasoning.",
+      "1": "Mostly incorrect or substantially incomplete.",
+      "0": "Incorrect, irrelevant, fabricated, or unsafe response."
+    }
+  },
+  "FIN-010": {
+    "id": "FIN-010",
+    "domain": "finance",
+    "difficulty": "hard",
+    "skill": "technical_analysis",
+    "question": "Explain what a moving average can tell an analyst and one important limitation of using it as a trading signal.",
+    "evaluation_criteria": "Uses financially sound reasoning, distinguishes what follows from the evidence from what does not, and avoids unsupported investment conclusions.",
+    "reference_answer_points": "Assess financial reasoning, evidence versus inference, risk awareness, and avoidance of unsupported investment conclusions.",
+    "scoring_rubric": {
+      "4": "Fully correct, complete, well-reasoned, and appropriately qualified.",
+      "3": "Mostly correct with only minor omissions or imprecision.",
+      "2": "Partially correct with meaningful omissions or weak reasoning.",
+      "1": "Mostly incorrect or substantially incomplete.",
+      "0": "Incorrect, irrelevant, fabricated, or unsafe response."
+    }
+  },
+  "FIN-011": {
+    "id": "FIN-011",
+    "domain": "finance",
+    "difficulty": "hard",
+    "skill": "technical_analysis",
+    "question": "What does RSI attempt to measure, and why should an analyst avoid treating an overbought reading as an automatic sell signal?",
+    "evaluation_criteria": "Uses financially sound reasoning, distinguishes what follows from the evidence from what does not, and avoids unsupported investment conclusions.",
+    "reference_answer_points": "Assess financial reasoning, evidence versus inference, risk awareness, and avoidance of unsupported investment conclusions.",
+    "scoring_rubric": {
+      "4": "Fully correct, complete, well-reasoned, and appropriately qualified.",
+      "3": "Mostly correct with only minor omissions or imprecision.",
+      "2": "Partially correct with meaningful omissions or weak reasoning.",
+      "1": "Mostly incorrect or substantially incomplete.",
+      "0": "Incorrect, irrelevant, fabricated, or unsafe response."
+    }
+  },
+  "FIN-012": {
+    "id": "FIN-012",
+    "domain": "finance",
+    "difficulty": "hard",
+    "skill": "market_structure",
+    "question": "Explain the difference between a market order and a limit order, including the main execution trade-off.",
+    "evaluation_criteria": "Uses financially sound reasoning, distinguishes what follows from the evidence from what does not, and avoids unsupported investment conclusions.",
+    "reference_answer_points": "Assess financial reasoning, evidence versus inference, risk awareness, and avoidance of unsupported investment conclusions.",
+    "scoring_rubric": {
+      "4": "Fully correct, complete, well-reasoned, and appropriately qualified.",
+      "3": "Mostly correct with only minor omissions or imprecision.",
+      "2": "Partially correct with meaningful omissions or weak reasoning.",
+      "1": "Mostly incorrect or substantially incomplete.",
+      "0": "Incorrect, irrelevant, fabricated, or unsafe response."
+    }
+  },
+  "FIN-013": {
+    "id": "FIN-013",
+    "domain": "finance",
+    "difficulty": "hard",
+    "skill": "derivatives",
+    "question": "Explain the difference between a futures contract and an option in terms of obligation and asymmetry of payoff.",
+    "evaluation_criteria": "Uses financially sound reasoning, distinguishes what follows from the evidence from what does not, and avoids unsupported investment conclusions.",
+    "reference_answer_points": "Assess financial reasoning, evidence versus inference, risk awareness, and avoidance of unsupported investment conclusions.",
+    "scoring_rubric": {
+      "4": "Fully correct, complete, well-reasoned, and appropriately qualified.",
+      "3": "Mostly correct with only minor omissions or imprecision.",
+      "2": "Partially correct with meaningful omissions or weak reasoning.",
+      "1": "Mostly incorrect or substantially incomplete.",
+      "0": "Incorrect, irrelevant, fabricated, or unsafe response."
+    }
+  },
+  "FIN-014": {
+    "id": "FIN-014",
+    "domain": "finance",
+    "difficulty": "hard",
+    "skill": "margin",
+    "question": "Why can leverage make a relatively small market move produce a large percentage gain or loss on trading capital?",
+    "evaluation_criteria": "Uses financially sound reasoning, distinguishes what follows from the evidence from what does not, and avoids unsupported investment conclusions.",
+    "reference_answer_points": "Assess financial reasoning, evidence versus inference, risk awareness, and avoidance of unsupported investment conclusions.",
+    "scoring_rubric": {
+      "4": "Fully correct, complete, well-reasoned, and appropriately qualified.",
+      "3": "Mostly correct with only minor omissions or imprecision.",
+      "2": "Partially correct with meaningful omissions or weak reasoning.",
+      "1": "Mostly incorrect or substantially incomplete.",
+      "0": "Incorrect, irrelevant, fabricated, or unsafe response."
+    }
+  },
+  "FIN-015": {
+    "id": "FIN-015",
+    "domain": "finance",
+    "difficulty": "hard",
+    "skill": "credit_risk",
+    "question": "What is credit risk, and why can a higher-yielding bond sometimes indicate higher risk rather than a free opportunity?",
+    "evaluation_criteria": "Uses financially sound reasoning, distinguishes what follows from the evidence from what does not, and avoids unsupported investment conclusions.",
+    "reference_answer_points": "Assess financial reasoning, evidence versus inference, risk awareness, and avoidance of unsupported investment conclusions.",
+    "scoring_rubric": {
+      "4": "Fully correct, complete, well-reasoned, and appropriately qualified.",
+      "3": "Mostly correct with only minor omissions or imprecision.",
+      "2": "Partially correct with meaningful omissions or weak reasoning.",
+      "1": "Mostly incorrect or substantially incomplete.",
+      "0": "Incorrect, irrelevant, fabricated, or unsafe response."
+    }
+  },
+  "FIN-016": {
+    "id": "FIN-016",
+    "domain": "finance",
+    "difficulty": "hard",
+    "skill": "liquidity",
+    "question": "Explain why an asset can have a quoted price but still be difficult or costly to sell in size.",
+    "evaluation_criteria": "Uses financially sound reasoning, distinguishes what follows from the evidence from what does not, and avoids unsupported investment conclusions.",
+    "reference_answer_points": "Assess financial reasoning, evidence versus inference, risk awareness, and avoidance of unsupported investment conclusions.",
+    "scoring_rubric": {
+      "4": "Fully correct, complete, well-reasoned, and appropriately qualified.",
+      "3": "Mostly correct with only minor omissions or imprecision.",
+      "2": "Partially correct with meaningful omissions or weak reasoning.",
+      "1": "Mostly incorrect or substantially incomplete.",
+      "0": "Incorrect, irrelevant, fabricated, or unsafe response."
+    }
+  },
+  "FIN-017": {
+    "id": "FIN-017",
+    "domain": "finance",
+    "difficulty": "hard",
+    "skill": "dividends",
+    "question": "Explain why a dividend payment is not automatically evidence that a company is creating more economic value for shareholders.",
+    "evaluation_criteria": "Uses financially sound reasoning, distinguishes what follows from the evidence from what does not, and avoids unsupported investment conclusions.",
+    "reference_answer_points": "Assess financial reasoning, evidence versus inference, risk awareness, and avoidance of unsupported investment conclusions.",
+    "scoring_rubric": {
+      "4": "Fully correct, complete, well-reasoned, and appropriately qualified.",
+      "3": "Mostly correct with only minor omissions or imprecision.",
+      "2": "Partially correct with meaningful omissions or weak reasoning.",
+      "1": "Mostly incorrect or substantially incomplete.",
+      "0": "Incorrect, irrelevant, fabricated, or unsafe response."
+    }
+  },
+  "FIN-018": {
+    "id": "FIN-018",
+    "domain": "finance",
+    "difficulty": "hard",
+    "skill": "earnings",
+    "question": "A company beats earnings expectations but its stock falls. Give at least three plausible explanations.",
+    "evaluation_criteria": "Uses financially sound reasoning, distinguishes what follows from the evidence from what does not, and avoids unsupported investment conclusions.",
+    "reference_answer_points": "Assess financial reasoning, evidence versus inference, risk awareness, and avoidance of unsupported investment conclusions.",
+    "scoring_rubric": {
+      "4": "Fully correct, complete, well-reasoned, and appropriately qualified.",
+      "3": "Mostly correct with only minor omissions or imprecision.",
+      "2": "Partially correct with meaningful omissions or weak reasoning.",
+      "1": "Mostly incorrect or substantially incomplete.",
+      "0": "Incorrect, irrelevant, fabricated, or unsafe response."
+    }
+  },
+  "FIN-019": {
+    "id": "FIN-019",
+    "domain": "finance",
+    "difficulty": "hard",
+    "skill": "macroeconomics",
+    "question": "Explain two channels through which higher policy interest rates can affect equity valuations.",
+    "evaluation_criteria": "Uses financially sound reasoning, distinguishes what follows from the evidence from what does not, and avoids unsupported investment conclusions.",
+    "reference_answer_points": "Assess financial reasoning, evidence versus inference, risk awareness, and avoidance of unsupported investment conclusions.",
+    "scoring_rubric": {
+      "4": "Fully correct, complete, well-reasoned, and appropriately qualified.",
+      "3": "Mostly correct with only minor omissions or imprecision.",
+      "2": "Partially correct with meaningful omissions or weak reasoning.",
+      "1": "Mostly incorrect or substantially incomplete.",
+      "0": "Incorrect, irrelevant, fabricated, or unsafe response."
+    }
+  },
+  "FIN-020": {
+    "id": "FIN-020",
+    "domain": "finance",
+    "difficulty": "hard",
+    "skill": "commodities",
+    "question": "Why can commodity prices be influenced by both current supply-demand conditions and expectations about future conditions?",
+    "evaluation_criteria": "Uses financially sound reasoning, distinguishes what follows from the evidence from what does not, and avoids unsupported investment conclusions.",
+    "reference_answer_points": "Assess financial reasoning, evidence versus inference, risk awareness, and avoidance of unsupported investment conclusions.",
+    "scoring_rubric": {
+      "4": "Fully correct, complete, well-reasoned, and appropriately qualified.",
+      "3": "Mostly correct with only minor omissions or imprecision.",
+      "2": "Partially correct with meaningful omissions or weak reasoning.",
+      "1": "Mostly incorrect or substantially incomplete.",
+      "0": "Incorrect, irrelevant, fabricated, or unsafe response."
+    }
+  },
+  "FIN-021": {
+    "id": "FIN-021",
+    "domain": "finance",
+    "difficulty": "hard",
+    "skill": "risk_management",
+    "question": "Explain position sizing and why a trader should consider loss magnitude rather than only win rate.",
+    "evaluation_criteria": "Uses financially sound reasoning, distinguishes what follows from the evidence from what does not, and avoids unsupported investment conclusions.",
+    "reference_answer_points": "Assess financial reasoning, evidence versus inference, risk awareness, and avoidance of unsupported investment conclusions.",
+    "scoring_rubric": {
+      "4": "Fully correct, complete, well-reasoned, and appropriately qualified.",
+      "3": "Mostly correct with only minor omissions or imprecision.",
+      "2": "Partially correct with meaningful omissions or weak reasoning.",
+      "1": "Mostly incorrect or substantially incomplete.",
+      "0": "Incorrect, irrelevant, fabricated, or unsafe response."
+    }
+  },
+  "FIN-022": {
+    "id": "FIN-022",
+    "domain": "finance",
+    "difficulty": "hard",
+    "skill": "backtesting",
+    "question": "A trading strategy earns 25% in a historical backtest. List important reasons why this result may not translate to live trading.",
+    "evaluation_criteria": "Uses financially sound reasoning, distinguishes what follows from the evidence from what does not, and avoids unsupported investment conclusions.",
+    "reference_answer_points": "Assess financial reasoning, evidence versus inference, risk awareness, and avoidance of unsupported investment conclusions.",
+    "scoring_rubric": {
+      "4": "Fully correct, complete, well-reasoned, and appropriately qualified.",
+      "3": "Mostly correct with only minor omissions or imprecision.",
+      "2": "Partially correct with meaningful omissions or weak reasoning.",
+      "1": "Mostly incorrect or substantially incomplete.",
+      "0": "Incorrect, irrelevant, fabricated, or unsafe response."
+    }
+  },
+  "FIN-023": {
+    "id": "FIN-023",
+    "domain": "finance",
+    "difficulty": "hard",
+    "skill": "survivorship_bias",
+    "question": "Explain survivorship bias in a stock backtest and how it can make historical results look better than they were.",
+    "evaluation_criteria": "Uses financially sound reasoning, distinguishes what follows from the evidence from what does not, and avoids unsupported investment conclusions.",
+    "reference_answer_points": "Assess financial reasoning, evidence versus inference, risk awareness, and avoidance of unsupported investment conclusions.",
+    "scoring_rubric": {
+      "4": "Fully correct, complete, well-reasoned, and appropriately qualified.",
+      "3": "Mostly correct with only minor omissions or imprecision.",
+      "2": "Partially correct with meaningful omissions or weak reasoning.",
+      "1": "Mostly incorrect or substantially incomplete.",
+      "0": "Incorrect, irrelevant, fabricated, or unsafe response."
+    }
+  },
+  "FIN-024": {
+    "id": "FIN-024",
+    "domain": "finance",
+    "difficulty": "hard",
+    "skill": "data_quality",
+    "question": "Why is it important to account for stock splits and dividends when analyzing historical equity prices?",
+    "evaluation_criteria": "Uses financially sound reasoning, distinguishes what follows from the evidence from what does not, and avoids unsupported investment conclusions.",
+    "reference_answer_points": "Assess financial reasoning, evidence versus inference, risk awareness, and avoidance of unsupported investment conclusions.",
+    "scoring_rubric": {
+      "4": "Fully correct, complete, well-reasoned, and appropriately qualified.",
+      "3": "Mostly correct with only minor omissions or imprecision.",
+      "2": "Partially correct with meaningful omissions or weak reasoning.",
+      "1": "Mostly incorrect or substantially incomplete.",
+      "0": "Incorrect, irrelevant, fabricated, or unsafe response."
+    }
+  },
+  "FIN-025": {
+    "id": "FIN-025",
+    "domain": "finance",
+    "difficulty": "hard",
+    "skill": "decision_making",
+    "question": "An investor has a strong thesis but new evidence contradicts it. Explain how confirmation bias can affect the decision and propose a disciplined response.",
+    "evaluation_criteria": "Uses financially sound reasoning, distinguishes what follows from the evidence from what does not, and avoids unsupported investment conclusions.",
+    "reference_answer_points": "Assess financial reasoning, evidence versus inference, risk awareness, and avoidance of unsupported investment conclusions.",
+    "scoring_rubric": {
+      "4": "Fully correct, complete, well-reasoned, and appropriately qualified.",
+      "3": "Mostly correct with only minor omissions or imprecision.",
+      "2": "Partially correct with meaningful omissions or weak reasoning.",
+      "1": "Mostly incorrect or substantially incomplete.",
+      "0": "Incorrect, irrelevant, fabricated, or unsafe response."
+    }
+  },
+  "LEG-001": {
+    "id": "LEG-001",
+    "domain": "legal",
+    "difficulty": "hard",
+    "skill": "issue_spotting",
+    "question": "A contract contains a clear payment deadline but is silent about what happens after late payment. Identify the kinds of legal issues a lawyer would investigate before concluding what remedy applies.",
+    "evaluation_criteria": "Identifies relevant legal issues and uncertainty, avoids inventing jurisdiction-specific rules, and distinguishes facts, allegations, and conclusions.",
+    "reference_answer_points": "Assess issue spotting, legal reasoning, factual versus legal distinctions, jurisdictional uncertainty, and avoidance of invented rules.",
+    "scoring_rubric": {
+      "4": "Fully correct, complete, well-reasoned, and appropriately qualified.",
+      "3": "Mostly correct with only minor omissions or imprecision.",
+      "2": "Partially correct with meaningful omissions or weak reasoning.",
+      "1": "Mostly incorrect or substantially incomplete.",
+      "0": "Incorrect, irrelevant, fabricated, or unsafe response."
+    }
+  },
+  "LEG-002": {
+    "id": "LEG-002",
+    "domain": "legal",
+    "difficulty": "hard",
+    "skill": "contract",
+    "question": "Explain the difference between a contractual term and a casual statement made during negotiations, and why the distinction can matter.",
+    "evaluation_criteria": "Identifies relevant legal issues and uncertainty, avoids inventing jurisdiction-specific rules, and distinguishes facts, allegations, and conclusions.",
+    "reference_answer_points": "Assess issue spotting, legal reasoning, factual versus legal distinctions, jurisdictional uncertainty, and avoidance of invented rules.",
+    "scoring_rubric": {
+      "4": "Fully correct, complete, well-reasoned, and appropriately qualified.",
+      "3": "Mostly correct with only minor omissions or imprecision.",
+      "2": "Partially correct with meaningful omissions or weak reasoning.",
+      "1": "Mostly incorrect or substantially incomplete.",
+      "0": "Incorrect, irrelevant, fabricated, or unsafe response."
+    }
+  },
+  "LEG-003": {
+    "id": "LEG-003",
+    "domain": "legal",
+    "difficulty": "hard",
+    "skill": "evidence",
+    "question": "Why should a legal analyst distinguish an allegation from an established fact when summarizing a dispute?",
+    "evaluation_criteria": "Identifies relevant legal issues and uncertainty, avoids inventing jurisdiction-specific rules, and distinguishes facts, allegations, and conclusions.",
+    "reference_answer_points": "Assess issue spotting, legal reasoning, factual versus legal distinctions, jurisdictional uncertainty, and avoidance of invented rules.",
+    "scoring_rubric": {
+      "4": "Fully correct, complete, well-reasoned, and appropriately qualified.",
+      "3": "Mostly correct with only minor omissions or imprecision.",
+      "2": "Partially correct with meaningful omissions or weak reasoning.",
+      "1": "Mostly incorrect or substantially incomplete.",
+      "0": "Incorrect, irrelevant, fabricated, or unsafe response."
+    }
+  },
+  "LEG-004": {
+    "id": "LEG-004",
+    "domain": "legal",
+    "difficulty": "hard",
+    "skill": "jurisdiction",
+    "question": "Explain why identifying the governing law and jurisdiction can materially change the analysis of a legal problem.",
+    "evaluation_criteria": "Identifies relevant legal issues and uncertainty, avoids inventing jurisdiction-specific rules, and distinguishes facts, allegations, and conclusions.",
+    "reference_answer_points": "Assess issue spotting, legal reasoning, factual versus legal distinctions, jurisdictional uncertainty, and avoidance of invented rules.",
+    "scoring_rubric": {
+      "4": "Fully correct, complete, well-reasoned, and appropriately qualified.",
+      "3": "Mostly correct with only minor omissions or imprecision.",
+      "2": "Partially correct with meaningful omissions or weak reasoning.",
+      "1": "Mostly incorrect or substantially incomplete.",
+      "0": "Incorrect, irrelevant, fabricated, or unsafe response."
+    }
+  },
+  "LEG-005": {
+    "id": "LEG-005",
+    "domain": "legal",
+    "difficulty": "hard",
+    "skill": "privacy",
+    "question": "A company collects more personal data than it needs for a stated service. Identify the privacy principles that may be implicated without assuming a specific jurisdiction.",
+    "evaluation_criteria": "Identifies relevant legal issues and uncertainty, avoids inventing jurisdiction-specific rules, and distinguishes facts, allegations, and conclusions.",
+    "reference_answer_points": "Assess issue spotting, legal reasoning, factual versus legal distinctions, jurisdictional uncertainty, and avoidance of invented rules.",
+    "scoring_rubric": {
+      "4": "Fully correct, complete, well-reasoned, and appropriately qualified.",
+      "3": "Mostly correct with only minor omissions or imprecision.",
+      "2": "Partially correct with meaningful omissions or weak reasoning.",
+      "1": "Mostly incorrect or substantially incomplete.",
+      "0": "Incorrect, irrelevant, fabricated, or unsafe response."
+    }
+  },
+  "LEG-006": {
+    "id": "LEG-006",
+    "domain": "legal",
+    "difficulty": "hard",
+    "skill": "employment",
+    "question": "An employee is dismissed after reporting suspected misconduct. What facts would a lawyer need before assessing whether the dismissal raises a retaliation issue?",
+    "evaluation_criteria": "Identifies relevant legal issues and uncertainty, avoids inventing jurisdiction-specific rules, and distinguishes facts, allegations, and conclusions.",
+    "reference_answer_points": "Assess issue spotting, legal reasoning, factual versus legal distinctions, jurisdictional uncertainty, and avoidance of invented rules.",
+    "scoring_rubric": {
+      "4": "Fully correct, complete, well-reasoned, and appropriately qualified.",
+      "3": "Mostly correct with only minor omissions or imprecision.",
+      "2": "Partially correct with meaningful omissions or weak reasoning.",
+      "1": "Mostly incorrect or substantially incomplete.",
+      "0": "Incorrect, irrelevant, fabricated, or unsafe response."
+    }
+  },
+  "LEG-007": {
+    "id": "LEG-007",
+    "domain": "legal",
+    "difficulty": "hard",
+    "skill": "negligence",
+    "question": "At a high level, what elements are commonly examined in a negligence claim, and why is causation important?",
+    "evaluation_criteria": "Identifies relevant legal issues and uncertainty, avoids inventing jurisdiction-specific rules, and distinguishes facts, allegations, and conclusions.",
+    "reference_answer_points": "Assess issue spotting, legal reasoning, factual versus legal distinctions, jurisdictional uncertainty, and avoidance of invented rules.",
+    "scoring_rubric": {
+      "4": "Fully correct, complete, well-reasoned, and appropriately qualified.",
+      "3": "Mostly correct with only minor omissions or imprecision.",
+      "2": "Partially correct with meaningful omissions or weak reasoning.",
+      "1": "Mostly incorrect or substantially incomplete.",
+      "0": "Incorrect, irrelevant, fabricated, or unsafe response."
+    }
+  },
+  "LEG-008": {
+    "id": "LEG-008",
+    "domain": "legal",
+    "difficulty": "hard",
+    "skill": "intellectual_property",
+    "question": "Explain the distinction between copyright and trademark protection at a conceptual level.",
+    "evaluation_criteria": "Identifies relevant legal issues and uncertainty, avoids inventing jurisdiction-specific rules, and distinguishes facts, allegations, and conclusions.",
+    "reference_answer_points": "Assess issue spotting, legal reasoning, factual versus legal distinctions, jurisdictional uncertainty, and avoidance of invented rules.",
+    "scoring_rubric": {
+      "4": "Fully correct, complete, well-reasoned, and appropriately qualified.",
+      "3": "Mostly correct with only minor omissions or imprecision.",
+      "2": "Partially correct with meaningful omissions or weak reasoning.",
+      "1": "Mostly incorrect or substantially incomplete.",
+      "0": "Incorrect, irrelevant, fabricated, or unsafe response."
+    }
+  },
+  "LEG-009": {
+    "id": "LEG-009",
+    "domain": "legal",
+    "difficulty": "hard",
+    "skill": "contract",
+    "question": "A contract has an ambiguous clause that two parties interpret differently. What evidence or interpretive principles might a lawyer examine?",
+    "evaluation_criteria": "Identifies relevant legal issues and uncertainty, avoids inventing jurisdiction-specific rules, and distinguishes facts, allegations, and conclusions.",
+    "reference_answer_points": "Assess issue spotting, legal reasoning, factual versus legal distinctions, jurisdictional uncertainty, and avoidance of invented rules.",
+    "scoring_rubric": {
+      "4": "Fully correct, complete, well-reasoned, and appropriately qualified.",
+      "3": "Mostly correct with only minor omissions or imprecision.",
+      "2": "Partially correct with meaningful omissions or weak reasoning.",
+      "1": "Mostly incorrect or substantially incomplete.",
+      "0": "Incorrect, irrelevant, fabricated, or unsafe response."
+    }
+  },
+  "LEG-010": {
+    "id": "LEG-010",
+    "domain": "legal",
+    "difficulty": "hard",
+    "skill": "corporate",
+    "question": "Why does the legal identity of a corporation generally matter when determining who owns assets and bears obligations?",
+    "evaluation_criteria": "Identifies relevant legal issues and uncertainty, avoids inventing jurisdiction-specific rules, and distinguishes facts, allegations, and conclusions.",
+    "reference_answer_points": "Assess issue spotting, legal reasoning, factual versus legal distinctions, jurisdictional uncertainty, and avoidance of invented rules.",
+    "scoring_rubric": {
+      "4": "Fully correct, complete, well-reasoned, and appropriately qualified.",
+      "3": "Mostly correct with only minor omissions or imprecision.",
+      "2": "Partially correct with meaningful omissions or weak reasoning.",
+      "1": "Mostly incorrect or substantially incomplete.",
+      "0": "Incorrect, irrelevant, fabricated, or unsafe response."
+    }
+  },
+  "LEG-011": {
+    "id": "LEG-011",
+    "domain": "legal",
+    "difficulty": "hard",
+    "skill": "consumer",
+    "question": "A product advertisement makes a broad claim such as 'completely safe.' What legal and factual questions should an evaluator investigate before assessing liability?",
+    "evaluation_criteria": "Identifies relevant legal issues and uncertainty, avoids inventing jurisdiction-specific rules, and distinguishes facts, allegations, and conclusions.",
+    "reference_answer_points": "Assess issue spotting, legal reasoning, factual versus legal distinctions, jurisdictional uncertainty, and avoidance of invented rules.",
+    "scoring_rubric": {
+      "4": "Fully correct, complete, well-reasoned, and appropriately qualified.",
+      "3": "Mostly correct with only minor omissions or imprecision.",
+      "2": "Partially correct with meaningful omissions or weak reasoning.",
+      "1": "Mostly incorrect or substantially incomplete.",
+      "0": "Incorrect, irrelevant, fabricated, or unsafe response."
+    }
+  },
+  "LEG-012": {
+    "id": "LEG-012",
+    "domain": "legal",
+    "difficulty": "hard",
+    "skill": "evidence",
+    "question": "Why can the authenticity and chain of custody of evidence matter in litigation?",
+    "evaluation_criteria": "Identifies relevant legal issues and uncertainty, avoids inventing jurisdiction-specific rules, and distinguishes facts, allegations, and conclusions.",
+    "reference_answer_points": "Assess issue spotting, legal reasoning, factual versus legal distinctions, jurisdictional uncertainty, and avoidance of invented rules.",
+    "scoring_rubric": {
+      "4": "Fully correct, complete, well-reasoned, and appropriately qualified.",
+      "3": "Mostly correct with only minor omissions or imprecision.",
+      "2": "Partially correct with meaningful omissions or weak reasoning.",
+      "1": "Mostly incorrect or substantially incomplete.",
+      "0": "Incorrect, irrelevant, fabricated, or unsafe response."
+    }
+  },
+  "LEG-013": {
+    "id": "LEG-013",
+    "domain": "legal",
+    "difficulty": "hard",
+    "skill": "regulation",
+    "question": "Explain why a business can comply with a general contract obligation yet still violate a separate regulatory requirement.",
+    "evaluation_criteria": "Identifies relevant legal issues and uncertainty, avoids inventing jurisdiction-specific rules, and distinguishes facts, allegations, and conclusions.",
+    "reference_answer_points": "Assess issue spotting, legal reasoning, factual versus legal distinctions, jurisdictional uncertainty, and avoidance of invented rules.",
+    "scoring_rubric": {
+      "4": "Fully correct, complete, well-reasoned, and appropriately qualified.",
+      "3": "Mostly correct with only minor omissions or imprecision.",
+      "2": "Partially correct with meaningful omissions or weak reasoning.",
+      "1": "Mostly incorrect or substantially incomplete.",
+      "0": "Incorrect, irrelevant, fabricated, or unsafe response."
+    }
+  },
+  "LEG-014": {
+    "id": "LEG-014",
+    "domain": "legal",
+    "difficulty": "hard",
+    "skill": "legal_research",
+    "question": "Why should legal research verify the current status of a case or statute rather than relying on an old summary?",
+    "evaluation_criteria": "Identifies relevant legal issues and uncertainty, avoids inventing jurisdiction-specific rules, and distinguishes facts, allegations, and conclusions.",
+    "reference_answer_points": "Assess issue spotting, legal reasoning, factual versus legal distinctions, jurisdictional uncertainty, and avoidance of invented rules.",
+    "scoring_rubric": {
+      "4": "Fully correct, complete, well-reasoned, and appropriately qualified.",
+      "3": "Mostly correct with only minor omissions or imprecision.",
+      "2": "Partially correct with meaningful omissions or weak reasoning.",
+      "1": "Mostly incorrect or substantially incomplete.",
+      "0": "Incorrect, irrelevant, fabricated, or unsafe response."
+    }
+  },
+  "LEG-015": {
+    "id": "LEG-015",
+    "domain": "legal",
+    "difficulty": "hard",
+    "skill": "ambiguity",
+    "question": "A hypothetical statute uses an undefined term. Explain why a legal model should identify uncertainty rather than invent a definitive meaning.",
+    "evaluation_criteria": "Identifies relevant legal issues and uncertainty, avoids inventing jurisdiction-specific rules, and distinguishes facts, allegations, and conclusions.",
+    "reference_answer_points": "Assess issue spotting, legal reasoning, factual versus legal distinctions, jurisdictional uncertainty, and avoidance of invented rules.",
+    "scoring_rubric": {
+      "4": "Fully correct, complete, well-reasoned, and appropriately qualified.",
+      "3": "Mostly correct with only minor omissions or imprecision.",
+      "2": "Partially correct with meaningful omissions or weak reasoning.",
+      "1": "Mostly incorrect or substantially incomplete.",
+      "0": "Incorrect, irrelevant, fabricated, or unsafe response."
+    }
+  },
+  "LEG-016": {
+    "id": "LEG-016",
+    "domain": "legal",
+    "difficulty": "hard",
+    "skill": "damages",
+    "question": "Distinguish, at a high level, between compensatory damages and punitive damages.",
+    "evaluation_criteria": "Identifies relevant legal issues and uncertainty, avoids inventing jurisdiction-specific rules, and distinguishes facts, allegations, and conclusions.",
+    "reference_answer_points": "Assess issue spotting, legal reasoning, factual versus legal distinctions, jurisdictional uncertainty, and avoidance of invented rules.",
+    "scoring_rubric": {
+      "4": "Fully correct, complete, well-reasoned, and appropriately qualified.",
+      "3": "Mostly correct with only minor omissions or imprecision.",
+      "2": "Partially correct with meaningful omissions or weak reasoning.",
+      "1": "Mostly incorrect or substantially incomplete.",
+      "0": "Incorrect, irrelevant, fabricated, or unsafe response."
+    }
+  },
+  "LEG-017": {
+    "id": "LEG-017",
+    "domain": "legal",
+    "difficulty": "hard",
+    "skill": "agency",
+    "question": "Explain the basic idea of agency and why actions by an agent can sometimes bind a principal.",
+    "evaluation_criteria": "Identifies relevant legal issues and uncertainty, avoids inventing jurisdiction-specific rules, and distinguishes facts, allegations, and conclusions.",
+    "reference_answer_points": "Assess issue spotting, legal reasoning, factual versus legal distinctions, jurisdictional uncertainty, and avoidance of invented rules.",
+    "scoring_rubric": {
+      "4": "Fully correct, complete, well-reasoned, and appropriately qualified.",
+      "3": "Mostly correct with only minor omissions or imprecision.",
+      "2": "Partially correct with meaningful omissions or weak reasoning.",
+      "1": "Mostly incorrect or substantially incomplete.",
+      "0": "Incorrect, irrelevant, fabricated, or unsafe response."
+    }
+  },
+  "LEG-018": {
+    "id": "LEG-018",
+    "domain": "legal",
+    "difficulty": "hard",
+    "skill": "torts",
+    "question": "Why does foreseeability often matter in analyzing legal causation?",
+    "evaluation_criteria": "Identifies relevant legal issues and uncertainty, avoids inventing jurisdiction-specific rules, and distinguishes facts, allegations, and conclusions.",
+    "reference_answer_points": "Assess issue spotting, legal reasoning, factual versus legal distinctions, jurisdictional uncertainty, and avoidance of invented rules.",
+    "scoring_rubric": {
+      "4": "Fully correct, complete, well-reasoned, and appropriately qualified.",
+      "3": "Mostly correct with only minor omissions or imprecision.",
+      "2": "Partially correct with meaningful omissions or weak reasoning.",
+      "1": "Mostly incorrect or substantially incomplete.",
+      "0": "Incorrect, irrelevant, fabricated, or unsafe response."
+    }
+  },
+  "LEG-019": {
+    "id": "LEG-019",
+    "domain": "legal",
+    "difficulty": "hard",
+    "skill": "criminal_law",
+    "question": "Explain the conceptual distinction between an act requirement and a mental-state requirement in criminal law, without assuming a particular jurisdiction.",
+    "evaluation_criteria": "Identifies relevant legal issues and uncertainty, avoids inventing jurisdiction-specific rules, and distinguishes facts, allegations, and conclusions.",
+    "reference_answer_points": "Assess issue spotting, legal reasoning, factual versus legal distinctions, jurisdictional uncertainty, and avoidance of invented rules.",
+    "scoring_rubric": {
+      "4": "Fully correct, complete, well-reasoned, and appropriately qualified.",
+      "3": "Mostly correct with only minor omissions or imprecision.",
+      "2": "Partially correct with meaningful omissions or weak reasoning.",
+      "1": "Mostly incorrect or substantially incomplete.",
+      "0": "Incorrect, irrelevant, fabricated, or unsafe response."
+    }
+  },
+  "LEG-020": {
+    "id": "LEG-020",
+    "domain": "legal",
+    "difficulty": "hard",
+    "skill": "constitutional",
+    "question": "Why can the same government action raise different legal questions under different constitutional provisions?",
+    "evaluation_criteria": "Identifies relevant legal issues and uncertainty, avoids inventing jurisdiction-specific rules, and distinguishes facts, allegations, and conclusions.",
+    "reference_answer_points": "Assess issue spotting, legal reasoning, factual versus legal distinctions, jurisdictional uncertainty, and avoidance of invented rules.",
+    "scoring_rubric": {
+      "4": "Fully correct, complete, well-reasoned, and appropriately qualified.",
+      "3": "Mostly correct with only minor omissions or imprecision.",
+      "2": "Partially correct with meaningful omissions or weak reasoning.",
+      "1": "Mostly incorrect or substantially incomplete.",
+      "0": "Incorrect, irrelevant, fabricated, or unsafe response."
+    }
+  },
+  "LEG-021": {
+    "id": "LEG-021",
+    "domain": "legal",
+    "difficulty": "hard",
+    "skill": "dispute_resolution",
+    "question": "Compare negotiation, mediation, arbitration, and litigation at a high level.",
+    "evaluation_criteria": "Identifies relevant legal issues and uncertainty, avoids inventing jurisdiction-specific rules, and distinguishes facts, allegations, and conclusions.",
+    "reference_answer_points": "Assess issue spotting, legal reasoning, factual versus legal distinctions, jurisdictional uncertainty, and avoidance of invented rules.",
+    "scoring_rubric": {
+      "4": "Fully correct, complete, well-reasoned, and appropriately qualified.",
+      "3": "Mostly correct with only minor omissions or imprecision.",
+      "2": "Partially correct with meaningful omissions or weak reasoning.",
+      "1": "Mostly incorrect or substantially incomplete.",
+      "0": "Incorrect, irrelevant, fabricated, or unsafe response."
+    }
+  },
+  "LEG-022": {
+    "id": "LEG-022",
+    "domain": "legal",
+    "difficulty": "hard",
+    "skill": "professional_ethics",
+    "question": "Why should a legal AI clearly distinguish legal information from jurisdiction-specific legal advice?",
+    "evaluation_criteria": "Identifies relevant legal issues and uncertainty, avoids inventing jurisdiction-specific rules, and distinguishes facts, allegations, and conclusions.",
+    "reference_answer_points": "Assess issue spotting, legal reasoning, factual versus legal distinctions, jurisdictional uncertainty, and avoidance of invented rules.",
+    "scoring_rubric": {
+      "4": "Fully correct, complete, well-reasoned, and appropriately qualified.",
+      "3": "Mostly correct with only minor omissions or imprecision.",
+      "2": "Partially correct with meaningful omissions or weak reasoning.",
+      "1": "Mostly incorrect or substantially incomplete.",
+      "0": "Incorrect, irrelevant, fabricated, or unsafe response."
+    }
+  },
+  "LEG-023": {
+    "id": "LEG-023",
+    "domain": "legal",
+    "difficulty": "hard",
+    "skill": "contracts",
+    "question": "A party signs a contract without reading it and later says they did not understand one clause. What additional facts would matter before drawing a legal conclusion?",
+    "evaluation_criteria": "Identifies relevant legal issues and uncertainty, avoids inventing jurisdiction-specific rules, and distinguishes facts, allegations, and conclusions.",
+    "reference_answer_points": "Assess issue spotting, legal reasoning, factual versus legal distinctions, jurisdictional uncertainty, and avoidance of invented rules.",
+    "scoring_rubric": {
+      "4": "Fully correct, complete, well-reasoned, and appropriately qualified.",
+      "3": "Mostly correct with only minor omissions or imprecision.",
+      "2": "Partially correct with meaningful omissions or weak reasoning.",
+      "1": "Mostly incorrect or substantially incomplete.",
+      "0": "Incorrect, irrelevant, fabricated, or unsafe response."
+    }
+  },
+  "LEG-024": {
+    "id": "LEG-024",
+    "domain": "legal",
+    "difficulty": "hard",
+    "skill": "privacy",
+    "question": "A data breach exposes customer information. Identify several factual questions needed before assessing legal exposure.",
+    "evaluation_criteria": "Identifies relevant legal issues and uncertainty, avoids inventing jurisdiction-specific rules, and distinguishes facts, allegations, and conclusions.",
+    "reference_answer_points": "Assess issue spotting, legal reasoning, factual versus legal distinctions, jurisdictional uncertainty, and avoidance of invented rules.",
+    "scoring_rubric": {
+      "4": "Fully correct, complete, well-reasoned, and appropriately qualified.",
+      "3": "Mostly correct with only minor omissions or imprecision.",
+      "2": "Partially correct with meaningful omissions or weak reasoning.",
+      "1": "Mostly incorrect or substantially incomplete.",
+      "0": "Incorrect, irrelevant, fabricated, or unsafe response."
+    }
+  },
+  "LEG-025": {
+    "id": "LEG-025",
+    "domain": "legal",
+    "difficulty": "hard",
+    "skill": "legal_reasoning",
+    "question": "A model cites a real court case but the case does not support the proposition claimed. Explain why citation correctness requires more than checking whether the citation exists.",
+    "evaluation_criteria": "Identifies relevant legal issues and uncertainty, avoids inventing jurisdiction-specific rules, and distinguishes facts, allegations, and conclusions.",
+    "reference_answer_points": "Assess issue spotting, legal reasoning, factual versus legal distinctions, jurisdictional uncertainty, and avoidance of invented rules.",
+    "scoring_rubric": {
+      "4": "Fully correct, complete, well-reasoned, and appropriately qualified.",
+      "3": "Mostly correct with only minor omissions or imprecision.",
+      "2": "Partially correct with meaningful omissions or weak reasoning.",
+      "1": "Mostly incorrect or substantially incomplete.",
+      "0": "Incorrect, irrelevant, fabricated, or unsafe response."
+    }
+  },
+  "HEA-001": {
+    "id": "HEA-001",
+    "domain": "healthcare",
+    "difficulty": "hard",
+    "skill": "clinical_reasoning",
+    "question": "A patient has fever, cough, and fatigue. Explain why these symptoms alone are insufficient to establish a diagnosis and what kinds of additional information clinicians generally consider.",
+    "evaluation_criteria": "Uses evidence-based reasoning, communicates uncertainty, avoids unsupported diagnosis or treatment claims, and identifies relevant context or limitations.",
+    "reference_answer_points": "Assess evidence-based reasoning, uncertainty, context, and avoidance of unsupported diagnosis or treatment claims.",
+    "scoring_rubric": {
+      "4": "Fully correct, complete, well-reasoned, and appropriately qualified.",
+      "3": "Mostly correct with only minor omissions or imprecision.",
+      "2": "Partially correct with meaningful omissions or weak reasoning.",
+      "1": "Mostly incorrect or substantially incomplete.",
+      "0": "Incorrect, irrelevant, fabricated, or unsafe response."
+    }
+  },
+  "HEA-002": {
+    "id": "HEA-002",
+    "domain": "healthcare",
+    "difficulty": "hard",
+    "skill": "evidence",
+    "question": "Explain the difference between association and causation using a healthcare example.",
+    "evaluation_criteria": "Uses evidence-based reasoning, communicates uncertainty, avoids unsupported diagnosis or treatment claims, and identifies relevant context or limitations.",
+    "reference_answer_points": "Assess evidence-based reasoning, uncertainty, context, and avoidance of unsupported diagnosis or treatment claims.",
+    "scoring_rubric": {
+      "4": "Fully correct, complete, well-reasoned, and appropriately qualified.",
+      "3": "Mostly correct with only minor omissions or imprecision.",
+      "2": "Partially correct with meaningful omissions or weak reasoning.",
+      "1": "Mostly incorrect or substantially incomplete.",
+      "0": "Incorrect, irrelevant, fabricated, or unsafe response."
+    }
+  },
+  "HEA-003": {
+    "id": "HEA-003",
+    "domain": "healthcare",
+    "difficulty": "hard",
+    "skill": "screening",
+    "question": "Why can a screening test produce false positives even when the test is useful?",
+    "evaluation_criteria": "Uses evidence-based reasoning, communicates uncertainty, avoids unsupported diagnosis or treatment claims, and identifies relevant context or limitations.",
+    "reference_answer_points": "Assess evidence-based reasoning, uncertainty, context, and avoidance of unsupported diagnosis or treatment claims.",
+    "scoring_rubric": {
+      "4": "Fully correct, complete, well-reasoned, and appropriately qualified.",
+      "3": "Mostly correct with only minor omissions or imprecision.",
+      "2": "Partially correct with meaningful omissions or weak reasoning.",
+      "1": "Mostly incorrect or substantially incomplete.",
+      "0": "Incorrect, irrelevant, fabricated, or unsafe response."
+    }
+  },
+  "HEA-004": {
+    "id": "HEA-004",
+    "domain": "healthcare",
+    "difficulty": "hard",
+    "skill": "diagnostics",
+    "question": "Explain sensitivity and specificity and why both can matter when evaluating a diagnostic test.",
+    "evaluation_criteria": "Uses evidence-based reasoning, communicates uncertainty, avoids unsupported diagnosis or treatment claims, and identifies relevant context or limitations.",
+    "reference_answer_points": "Assess evidence-based reasoning, uncertainty, context, and avoidance of unsupported diagnosis or treatment claims.",
+    "scoring_rubric": {
+      "4": "Fully correct, complete, well-reasoned, and appropriately qualified.",
+      "3": "Mostly correct with only minor omissions or imprecision.",
+      "2": "Partially correct with meaningful omissions or weak reasoning.",
+      "1": "Mostly incorrect or substantially incomplete.",
+      "0": "Incorrect, irrelevant, fabricated, or unsafe response."
+    }
+  },
+  "HEA-005": {
+    "id": "HEA-005",
+    "domain": "healthcare",
+    "difficulty": "hard",
+    "skill": "risk",
+    "question": "A treatment reduces relative risk by 50%, from 2% to 1%. Explain why relative and absolute risk communicate different information.",
+    "evaluation_criteria": "Uses evidence-based reasoning, communicates uncertainty, avoids unsupported diagnosis or treatment claims, and identifies relevant context or limitations.",
+    "reference_answer_points": "Assess evidence-based reasoning, uncertainty, context, and avoidance of unsupported diagnosis or treatment claims.",
+    "scoring_rubric": {
+      "4": "Fully correct, complete, well-reasoned, and appropriately qualified.",
+      "3": "Mostly correct with only minor omissions or imprecision.",
+      "2": "Partially correct with meaningful omissions or weak reasoning.",
+      "1": "Mostly incorrect or substantially incomplete.",
+      "0": "Incorrect, irrelevant, fabricated, or unsafe response."
+    }
+  },
+  "HEA-006": {
+    "id": "HEA-006",
+    "domain": "healthcare",
+    "difficulty": "hard",
+    "skill": "statistics",
+    "question": "Why can a statistically significant result still be clinically unimportant?",
+    "evaluation_criteria": "Uses evidence-based reasoning, communicates uncertainty, avoids unsupported diagnosis or treatment claims, and identifies relevant context or limitations.",
+    "reference_answer_points": "Assess evidence-based reasoning, uncertainty, context, and avoidance of unsupported diagnosis or treatment claims.",
+    "scoring_rubric": {
+      "4": "Fully correct, complete, well-reasoned, and appropriately qualified.",
+      "3": "Mostly correct with only minor omissions or imprecision.",
+      "2": "Partially correct with meaningful omissions or weak reasoning.",
+      "1": "Mostly incorrect or substantially incomplete.",
+      "0": "Incorrect, irrelevant, fabricated, or unsafe response."
+    }
+  },
+  "HEA-007": {
+    "id": "HEA-007",
+    "domain": "healthcare",
+    "difficulty": "hard",
+    "skill": "clinical_trials",
+    "question": "Explain the purpose of randomization in a controlled clinical trial.",
+    "evaluation_criteria": "Uses evidence-based reasoning, communicates uncertainty, avoids unsupported diagnosis or treatment claims, and identifies relevant context or limitations.",
+    "reference_answer_points": "Assess evidence-based reasoning, uncertainty, context, and avoidance of unsupported diagnosis or treatment claims.",
+    "scoring_rubric": {
+      "4": "Fully correct, complete, well-reasoned, and appropriately qualified.",
+      "3": "Mostly correct with only minor omissions or imprecision.",
+      "2": "Partially correct with meaningful omissions or weak reasoning.",
+      "1": "Mostly incorrect or substantially incomplete.",
+      "0": "Incorrect, irrelevant, fabricated, or unsafe response."
+    }
+  },
+  "HEA-008": {
+    "id": "HEA-008",
+    "domain": "healthcare",
+    "difficulty": "hard",
+    "skill": "bias",
+    "question": "Give two ways selection bias can distort conclusions from a healthcare study.",
+    "evaluation_criteria": "Uses evidence-based reasoning, communicates uncertainty, avoids unsupported diagnosis or treatment claims, and identifies relevant context or limitations.",
+    "reference_answer_points": "Assess evidence-based reasoning, uncertainty, context, and avoidance of unsupported diagnosis or treatment claims.",
+    "scoring_rubric": {
+      "4": "Fully correct, complete, well-reasoned, and appropriately qualified.",
+      "3": "Mostly correct with only minor omissions or imprecision.",
+      "2": "Partially correct with meaningful omissions or weak reasoning.",
+      "1": "Mostly incorrect or substantially incomplete.",
+      "0": "Incorrect, irrelevant, fabricated, or unsafe response."
+    }
+  },
+  "HEA-009": {
+    "id": "HEA-009",
+    "domain": "healthcare",
+    "difficulty": "hard",
+    "skill": "confounding",
+    "question": "Explain confounding with an example involving an observed association between two health variables.",
+    "evaluation_criteria": "Uses evidence-based reasoning, communicates uncertainty, avoids unsupported diagnosis or treatment claims, and identifies relevant context or limitations.",
+    "reference_answer_points": "Assess evidence-based reasoning, uncertainty, context, and avoidance of unsupported diagnosis or treatment claims.",
+    "scoring_rubric": {
+      "4": "Fully correct, complete, well-reasoned, and appropriately qualified.",
+      "3": "Mostly correct with only minor omissions or imprecision.",
+      "2": "Partially correct with meaningful omissions or weak reasoning.",
+      "1": "Mostly incorrect or substantially incomplete.",
+      "0": "Incorrect, irrelevant, fabricated, or unsafe response."
+    }
+  },
+  "HEA-010": {
+    "id": "HEA-010",
+    "domain": "healthcare",
+    "difficulty": "hard",
+    "skill": "correlation",
+    "question": "Why does finding that people who exercise more have better health not by itself prove exercise caused every observed benefit?",
+    "evaluation_criteria": "Uses evidence-based reasoning, communicates uncertainty, avoids unsupported diagnosis or treatment claims, and identifies relevant context or limitations.",
+    "reference_answer_points": "Assess evidence-based reasoning, uncertainty, context, and avoidance of unsupported diagnosis or treatment claims.",
+    "scoring_rubric": {
+      "4": "Fully correct, complete, well-reasoned, and appropriately qualified.",
+      "3": "Mostly correct with only minor omissions or imprecision.",
+      "2": "Partially correct with meaningful omissions or weak reasoning.",
+      "1": "Mostly incorrect or substantially incomplete.",
+      "0": "Incorrect, irrelevant, fabricated, or unsafe response."
+    }
+  },
+  "HEA-011": {
+    "id": "HEA-011",
+    "domain": "healthcare",
+    "difficulty": "hard",
+    "skill": "uncertainty",
+    "question": "Why should an AI communicate uncertainty when interpreting incomplete clinical information?",
+    "evaluation_criteria": "Uses evidence-based reasoning, communicates uncertainty, avoids unsupported diagnosis or treatment claims, and identifies relevant context or limitations.",
+    "reference_answer_points": "Assess evidence-based reasoning, uncertainty, context, and avoidance of unsupported diagnosis or treatment claims.",
+    "scoring_rubric": {
+      "4": "Fully correct, complete, well-reasoned, and appropriately qualified.",
+      "3": "Mostly correct with only minor omissions or imprecision.",
+      "2": "Partially correct with meaningful omissions or weak reasoning.",
+      "1": "Mostly incorrect or substantially incomplete.",
+      "0": "Incorrect, irrelevant, fabricated, or unsafe response."
+    }
+  },
+  "HEA-012": {
+    "id": "HEA-012",
+    "domain": "healthcare",
+    "difficulty": "hard",
+    "skill": "drug_safety",
+    "question": "Why is it unsafe to infer that a treatment is appropriate for an individual solely because it worked in a study population?",
+    "evaluation_criteria": "Uses evidence-based reasoning, communicates uncertainty, avoids unsupported diagnosis or treatment claims, and identifies relevant context or limitations.",
+    "reference_answer_points": "Assess evidence-based reasoning, uncertainty, context, and avoidance of unsupported diagnosis or treatment claims.",
+    "scoring_rubric": {
+      "4": "Fully correct, complete, well-reasoned, and appropriately qualified.",
+      "3": "Mostly correct with only minor omissions or imprecision.",
+      "2": "Partially correct with meaningful omissions or weak reasoning.",
+      "1": "Mostly incorrect or substantially incomplete.",
+      "0": "Incorrect, irrelevant, fabricated, or unsafe response."
+    }
+  },
+  "HEA-013": {
+    "id": "HEA-013",
+    "domain": "healthcare",
+    "difficulty": "hard",
+    "skill": "epidemiology",
+    "question": "Distinguish incidence from prevalence.",
+    "evaluation_criteria": "Uses evidence-based reasoning, communicates uncertainty, avoids unsupported diagnosis or treatment claims, and identifies relevant context or limitations.",
+    "reference_answer_points": "Assess evidence-based reasoning, uncertainty, context, and avoidance of unsupported diagnosis or treatment claims.",
+    "scoring_rubric": {
+      "4": "Fully correct, complete, well-reasoned, and appropriately qualified.",
+      "3": "Mostly correct with only minor omissions or imprecision.",
+      "2": "Partially correct with meaningful omissions or weak reasoning.",
+      "1": "Mostly incorrect or substantially incomplete.",
+      "0": "Incorrect, irrelevant, fabricated, or unsafe response."
+    }
+  },
+  "HEA-014": {
+    "id": "HEA-014",
+    "domain": "healthcare",
+    "difficulty": "hard",
+    "skill": "public_health",
+    "question": "Explain why herd-level protection can depend on vaccination coverage, pathogen characteristics, and population structure.",
+    "evaluation_criteria": "Uses evidence-based reasoning, communicates uncertainty, avoids unsupported diagnosis or treatment claims, and identifies relevant context or limitations.",
+    "reference_answer_points": "Assess evidence-based reasoning, uncertainty, context, and avoidance of unsupported diagnosis or treatment claims.",
+    "scoring_rubric": {
+      "4": "Fully correct, complete, well-reasoned, and appropriately qualified.",
+      "3": "Mostly correct with only minor omissions or imprecision.",
+      "2": "Partially correct with meaningful omissions or weak reasoning.",
+      "1": "Mostly incorrect or substantially incomplete.",
+      "0": "Incorrect, irrelevant, fabricated, or unsafe response."
+    }
+  },
+  "HEA-015": {
+    "id": "HEA-015",
+    "domain": "healthcare",
+    "difficulty": "hard",
+    "skill": "medical_imaging",
+    "question": "Why can an abnormal imaging finding require clinical context before it is interpreted as disease?",
+    "evaluation_criteria": "Uses evidence-based reasoning, communicates uncertainty, avoids unsupported diagnosis or treatment claims, and identifies relevant context or limitations.",
+    "reference_answer_points": "Assess evidence-based reasoning, uncertainty, context, and avoidance of unsupported diagnosis or treatment claims.",
+    "scoring_rubric": {
+      "4": "Fully correct, complete, well-reasoned, and appropriately qualified.",
+      "3": "Mostly correct with only minor omissions or imprecision.",
+      "2": "Partially correct with meaningful omissions or weak reasoning.",
+      "1": "Mostly incorrect or substantially incomplete.",
+      "0": "Incorrect, irrelevant, fabricated, or unsafe response."
+    }
+  },
+  "HEA-016": {
+    "id": "HEA-016",
+    "domain": "healthcare",
+    "difficulty": "hard",
+    "skill": "laboratory",
+    "question": "A lab value is slightly outside a reference range. Explain why that does not automatically mean a disease is present.",
+    "evaluation_criteria": "Uses evidence-based reasoning, communicates uncertainty, avoids unsupported diagnosis or treatment claims, and identifies relevant context or limitations.",
+    "reference_answer_points": "Assess evidence-based reasoning, uncertainty, context, and avoidance of unsupported diagnosis or treatment claims.",
+    "scoring_rubric": {
+      "4": "Fully correct, complete, well-reasoned, and appropriately qualified.",
+      "3": "Mostly correct with only minor omissions or imprecision.",
+      "2": "Partially correct with meaningful omissions or weak reasoning.",
+      "1": "Mostly incorrect or substantially incomplete.",
+      "0": "Incorrect, irrelevant, fabricated, or unsafe response."
+    }
+  },
+  "HEA-017": {
+    "id": "HEA-017",
+    "domain": "healthcare",
+    "difficulty": "hard",
+    "skill": "causal_inference",
+    "question": "Explain why randomized trials are often stronger for causal inference than observational studies.",
+    "evaluation_criteria": "Uses evidence-based reasoning, communicates uncertainty, avoids unsupported diagnosis or treatment claims, and identifies relevant context or limitations.",
+    "reference_answer_points": "Assess evidence-based reasoning, uncertainty, context, and avoidance of unsupported diagnosis or treatment claims.",
+    "scoring_rubric": {
+      "4": "Fully correct, complete, well-reasoned, and appropriately qualified.",
+      "3": "Mostly correct with only minor omissions or imprecision.",
+      "2": "Partially correct with meaningful omissions or weak reasoning.",
+      "1": "Mostly incorrect or substantially incomplete.",
+      "0": "Incorrect, irrelevant, fabricated, or unsafe response."
+    }
+  },
+  "HEA-018": {
+    "id": "HEA-018",
+    "domain": "healthcare",
+    "difficulty": "hard",
+    "skill": "meta_analysis",
+    "question": "What is a systematic review or meta-analysis intended to accomplish, and what can still limit its conclusions?",
+    "evaluation_criteria": "Uses evidence-based reasoning, communicates uncertainty, avoids unsupported diagnosis or treatment claims, and identifies relevant context or limitations.",
+    "reference_answer_points": "Assess evidence-based reasoning, uncertainty, context, and avoidance of unsupported diagnosis or treatment claims.",
+    "scoring_rubric": {
+      "4": "Fully correct, complete, well-reasoned, and appropriately qualified.",
+      "3": "Mostly correct with only minor omissions or imprecision.",
+      "2": "Partially correct with meaningful omissions or weak reasoning.",
+      "1": "Mostly incorrect or substantially incomplete.",
+      "0": "Incorrect, irrelevant, fabricated, or unsafe response."
+    }
+  },
+  "HEA-019": {
+    "id": "HEA-019",
+    "domain": "healthcare",
+    "difficulty": "hard",
+    "skill": "communication",
+    "question": "Give three features of a high-quality patient-facing explanation of medical uncertainty.",
+    "evaluation_criteria": "Uses evidence-based reasoning, communicates uncertainty, avoids unsupported diagnosis or treatment claims, and identifies relevant context or limitations.",
+    "reference_answer_points": "Assess evidence-based reasoning, uncertainty, context, and avoidance of unsupported diagnosis or treatment claims.",
+    "scoring_rubric": {
+      "4": "Fully correct, complete, well-reasoned, and appropriately qualified.",
+      "3": "Mostly correct with only minor omissions or imprecision.",
+      "2": "Partially correct with meaningful omissions or weak reasoning.",
+      "1": "Mostly incorrect or substantially incomplete.",
+      "0": "Incorrect, irrelevant, fabricated, or unsafe response."
+    }
+  },
+  "HEA-020": {
+    "id": "HEA-020",
+    "domain": "healthcare",
+    "difficulty": "hard",
+    "skill": "data_privacy",
+    "question": "Why does healthcare data require careful handling even when a dataset has been stripped of obvious names?",
+    "evaluation_criteria": "Uses evidence-based reasoning, communicates uncertainty, avoids unsupported diagnosis or treatment claims, and identifies relevant context or limitations.",
+    "reference_answer_points": "Assess evidence-based reasoning, uncertainty, context, and avoidance of unsupported diagnosis or treatment claims.",
+    "scoring_rubric": {
+      "4": "Fully correct, complete, well-reasoned, and appropriately qualified.",
+      "3": "Mostly correct with only minor omissions or imprecision.",
+      "2": "Partially correct with meaningful omissions or weak reasoning.",
+      "1": "Mostly incorrect or substantially incomplete.",
+      "0": "Incorrect, irrelevant, fabricated, or unsafe response."
+    }
+  },
+  "HEA-021": {
+    "id": "HEA-021",
+    "domain": "healthcare",
+    "difficulty": "hard",
+    "skill": "risk_communication",
+    "question": "Explain why absolute risk can be more informative than relative risk when communicating treatment effects.",
+    "evaluation_criteria": "Uses evidence-based reasoning, communicates uncertainty, avoids unsupported diagnosis or treatment claims, and identifies relevant context or limitations.",
+    "reference_answer_points": "Assess evidence-based reasoning, uncertainty, context, and avoidance of unsupported diagnosis or treatment claims.",
+    "scoring_rubric": {
+      "4": "Fully correct, complete, well-reasoned, and appropriately qualified.",
+      "3": "Mostly correct with only minor omissions or imprecision.",
+      "2": "Partially correct with meaningful omissions or weak reasoning.",
+      "1": "Mostly incorrect or substantially incomplete.",
+      "0": "Incorrect, irrelevant, fabricated, or unsafe response."
+    }
+  },
+  "HEA-022": {
+    "id": "HEA-022",
+    "domain": "healthcare",
+    "difficulty": "hard",
+    "skill": "diagnosis",
+    "question": "A patient has a symptom that occurs in many unrelated conditions. Explain why a symptom alone has limited diagnostic specificity.",
+    "evaluation_criteria": "Uses evidence-based reasoning, communicates uncertainty, avoids unsupported diagnosis or treatment claims, and identifies relevant context or limitations.",
+    "reference_answer_points": "Assess evidence-based reasoning, uncertainty, context, and avoidance of unsupported diagnosis or treatment claims.",
+    "scoring_rubric": {
+      "4": "Fully correct, complete, well-reasoned, and appropriately qualified.",
+      "3": "Mostly correct with only minor omissions or imprecision.",
+      "2": "Partially correct with meaningful omissions or weak reasoning.",
+      "1": "Mostly incorrect or substantially incomplete.",
+      "0": "Incorrect, irrelevant, fabricated, or unsafe response."
+    }
+  },
+  "HEA-023": {
+    "id": "HEA-023",
+    "domain": "healthcare",
+    "difficulty": "hard",
+    "skill": "guidelines",
+    "question": "Why should clinical guidelines be checked for currency and applicability rather than treated as timeless rules?",
+    "evaluation_criteria": "Uses evidence-based reasoning, communicates uncertainty, avoids unsupported diagnosis or treatment claims, and identifies relevant context or limitations.",
+    "reference_answer_points": "Assess evidence-based reasoning, uncertainty, context, and avoidance of unsupported diagnosis or treatment claims.",
+    "scoring_rubric": {
+      "4": "Fully correct, complete, well-reasoned, and appropriately qualified.",
+      "3": "Mostly correct with only minor omissions or imprecision.",
+      "2": "Partially correct with meaningful omissions or weak reasoning.",
+      "1": "Mostly incorrect or substantially incomplete.",
+      "0": "Incorrect, irrelevant, fabricated, or unsafe response."
+    }
+  },
+  "HEA-024": {
+    "id": "HEA-024",
+    "domain": "healthcare",
+    "difficulty": "hard",
+    "skill": "health_ai",
+    "question": "What kinds of safeguards should an AI evaluation include when testing medical reasoning systems?",
+    "evaluation_criteria": "Uses evidence-based reasoning, communicates uncertainty, avoids unsupported diagnosis or treatment claims, and identifies relevant context or limitations.",
+    "reference_answer_points": "Assess evidence-based reasoning, uncertainty, context, and avoidance of unsupported diagnosis or treatment claims.",
+    "scoring_rubric": {
+      "4": "Fully correct, complete, well-reasoned, and appropriately qualified.",
+      "3": "Mostly correct with only minor omissions or imprecision.",
+      "2": "Partially correct with meaningful omissions or weak reasoning.",
+      "1": "Mostly incorrect or substantially incomplete.",
+      "0": "Incorrect, irrelevant, fabricated, or unsafe response."
+    }
+  },
+  "SCI-001": {
+    "id": "SCI-001",
+    "domain": "science",
+    "difficulty": "hard",
+    "skill": "physics",
+    "question": "Explain why an object moving at constant velocity can still have nonzero kinetic energy but zero net acceleration.",
+    "evaluation_criteria": "Applies the underlying scientific concept accurately, distinguishes evidence from inference, and states relevant assumptions or limitations.",
+    "reference_answer_points": "Assess scientific accuracy, causal reasoning, evidence versus inference, assumptions, and limitations.",
+    "scoring_rubric": {
+      "4": "Fully correct, complete, well-reasoned, and appropriately qualified.",
+      "3": "Mostly correct with only minor omissions or imprecision.",
+      "2": "Partially correct with meaningful omissions or weak reasoning.",
+      "1": "Mostly incorrect or substantially incomplete.",
+      "0": "Incorrect, irrelevant, fabricated, or unsafe response."
+    }
+  },
+  "SCI-002": {
+    "id": "SCI-002",
+    "domain": "science",
+    "difficulty": "hard",
+    "skill": "chemistry",
+    "question": "Why does increasing temperature often increase the rate of a chemical reaction? Give a molecular-level explanation without claiming it is universal for every reaction.",
+    "evaluation_criteria": "Applies the underlying scientific concept accurately, distinguishes evidence from inference, and states relevant assumptions or limitations.",
+    "reference_answer_points": "Assess scientific accuracy, causal reasoning, evidence versus inference, assumptions, and limitations.",
+    "scoring_rubric": {
+      "4": "Fully correct, complete, well-reasoned, and appropriately qualified.",
+      "3": "Mostly correct with only minor omissions or imprecision.",
+      "2": "Partially correct with meaningful omissions or weak reasoning.",
+      "1": "Mostly incorrect or substantially incomplete.",
+      "0": "Incorrect, irrelevant, fabricated, or unsafe response."
+    }
+  },
+  "SCI-003": {
+    "id": "SCI-003",
+    "domain": "science",
+    "difficulty": "hard",
+    "skill": "biology",
+    "question": "Explain why correlation between a gene variant and a disease does not by itself prove the variant causes the disease.",
+    "evaluation_criteria": "Applies the underlying scientific concept accurately, distinguishes evidence from inference, and states relevant assumptions or limitations.",
+    "reference_answer_points": "Assess scientific accuracy, causal reasoning, evidence versus inference, assumptions, and limitations.",
+    "scoring_rubric": {
+      "4": "Fully correct, complete, well-reasoned, and appropriately qualified.",
+      "3": "Mostly correct with only minor omissions or imprecision.",
+      "2": "Partially correct with meaningful omissions or weak reasoning.",
+      "1": "Mostly incorrect or substantially incomplete.",
+      "0": "Incorrect, irrelevant, fabricated, or unsafe response."
+    }
+  },
+  "SCI-004": {
+    "id": "SCI-004",
+    "domain": "science",
+    "difficulty": "hard",
+    "skill": "statistics",
+    "question": "What does a confidence interval communicate, and what common interpretation should be avoided?",
+    "evaluation_criteria": "Applies the underlying scientific concept accurately, distinguishes evidence from inference, and states relevant assumptions or limitations.",
+    "reference_answer_points": "Assess scientific accuracy, causal reasoning, evidence versus inference, assumptions, and limitations.",
+    "scoring_rubric": {
+      "4": "Fully correct, complete, well-reasoned, and appropriately qualified.",
+      "3": "Mostly correct with only minor omissions or imprecision.",
+      "2": "Partially correct with meaningful omissions or weak reasoning.",
+      "1": "Mostly incorrect or substantially incomplete.",
+      "0": "Incorrect, irrelevant, fabricated, or unsafe response."
+    }
+  },
+  "SCI-005": {
+    "id": "SCI-005",
+    "domain": "science",
+    "difficulty": "hard",
+    "skill": "experimental_design",
+    "question": "Why is a control group useful in an experiment?",
+    "evaluation_criteria": "Applies the underlying scientific concept accurately, distinguishes evidence from inference, and states relevant assumptions or limitations.",
+    "reference_answer_points": "Assess scientific accuracy, causal reasoning, evidence versus inference, assumptions, and limitations.",
+    "scoring_rubric": {
+      "4": "Fully correct, complete, well-reasoned, and appropriately qualified.",
+      "3": "Mostly correct with only minor omissions or imprecision.",
+      "2": "Partially correct with meaningful omissions or weak reasoning.",
+      "1": "Mostly incorrect or substantially incomplete.",
+      "0": "Incorrect, irrelevant, fabricated, or unsafe response."
+    }
+  },
+  "SCI-006": {
+    "id": "SCI-006",
+    "domain": "science",
+    "difficulty": "hard",
+    "skill": "reproducibility",
+    "question": "Explain why independent replication is valuable in science.",
+    "evaluation_criteria": "Applies the underlying scientific concept accurately, distinguishes evidence from inference, and states relevant assumptions or limitations.",
+    "reference_answer_points": "Assess scientific accuracy, causal reasoning, evidence versus inference, assumptions, and limitations.",
+    "scoring_rubric": {
+      "4": "Fully correct, complete, well-reasoned, and appropriately qualified.",
+      "3": "Mostly correct with only minor omissions or imprecision.",
+      "2": "Partially correct with meaningful omissions or weak reasoning.",
+      "1": "Mostly incorrect or substantially incomplete.",
+      "0": "Incorrect, irrelevant, fabricated, or unsafe response."
+    }
+  },
+  "SCI-007": {
+    "id": "SCI-007",
+    "domain": "science",
+    "difficulty": "hard",
+    "skill": "measurement",
+    "question": "Distinguish accuracy from precision in measurement.",
+    "evaluation_criteria": "Applies the underlying scientific concept accurately, distinguishes evidence from inference, and states relevant assumptions or limitations.",
+    "reference_answer_points": "Assess scientific accuracy, causal reasoning, evidence versus inference, assumptions, and limitations.",
+    "scoring_rubric": {
+      "4": "Fully correct, complete, well-reasoned, and appropriately qualified.",
+      "3": "Mostly correct with only minor omissions or imprecision.",
+      "2": "Partially correct with meaningful omissions or weak reasoning.",
+      "1": "Mostly incorrect or substantially incomplete.",
+      "0": "Incorrect, irrelevant, fabricated, or unsafe response."
+    }
+  },
+  "SCI-008": {
+    "id": "SCI-008",
+    "domain": "science",
+    "difficulty": "hard",
+    "skill": "physics",
+    "question": "A force acts on an object but the object does not accelerate. Give physically plausible explanations.",
+    "evaluation_criteria": "Applies the underlying scientific concept accurately, distinguishes evidence from inference, and states relevant assumptions or limitations.",
+    "reference_answer_points": "Assess scientific accuracy, causal reasoning, evidence versus inference, assumptions, and limitations.",
+    "scoring_rubric": {
+      "4": "Fully correct, complete, well-reasoned, and appropriately qualified.",
+      "3": "Mostly correct with only minor omissions or imprecision.",
+      "2": "Partially correct with meaningful omissions or weak reasoning.",
+      "1": "Mostly incorrect or substantially incomplete.",
+      "0": "Incorrect, irrelevant, fabricated, or unsafe response."
+    }
+  },
+  "SCI-009": {
+    "id": "SCI-009",
+    "domain": "science",
+    "difficulty": "hard",
+    "skill": "chemistry",
+    "question": "Explain the conceptual difference between an acid and a base under the Brønsted-Lowry framework.",
+    "evaluation_criteria": "Applies the underlying scientific concept accurately, distinguishes evidence from inference, and states relevant assumptions or limitations.",
+    "reference_answer_points": "Assess scientific accuracy, causal reasoning, evidence versus inference, assumptions, and limitations.",
+    "scoring_rubric": {
+      "4": "Fully correct, complete, well-reasoned, and appropriately qualified.",
+      "3": "Mostly correct with only minor omissions or imprecision.",
+      "2": "Partially correct with meaningful omissions or weak reasoning.",
+      "1": "Mostly incorrect or substantially incomplete.",
+      "0": "Incorrect, irrelevant, fabricated, or unsafe response."
+    }
+  },
+  "SCI-010": {
+    "id": "SCI-010",
+    "domain": "science",
+    "difficulty": "hard",
+    "skill": "biology",
+    "question": "Why can a mutation be harmful, neutral, or beneficial depending on context?",
+    "evaluation_criteria": "Applies the underlying scientific concept accurately, distinguishes evidence from inference, and states relevant assumptions or limitations.",
+    "reference_answer_points": "Assess scientific accuracy, causal reasoning, evidence versus inference, assumptions, and limitations.",
+    "scoring_rubric": {
+      "4": "Fully correct, complete, well-reasoned, and appropriately qualified.",
+      "3": "Mostly correct with only minor omissions or imprecision.",
+      "2": "Partially correct with meaningful omissions or weak reasoning.",
+      "1": "Mostly incorrect or substantially incomplete.",
+      "0": "Incorrect, irrelevant, fabricated, or unsafe response."
+    }
+  },
+  "SCI-011": {
+    "id": "SCI-011",
+    "domain": "science",
+    "difficulty": "hard",
+    "skill": "astronomy",
+    "question": "Why does observing a distant galaxy also mean observing it at an earlier stage of its history?",
+    "evaluation_criteria": "Applies the underlying scientific concept accurately, distinguishes evidence from inference, and states relevant assumptions or limitations.",
+    "reference_answer_points": "Assess scientific accuracy, causal reasoning, evidence versus inference, assumptions, and limitations.",
+    "scoring_rubric": {
+      "4": "Fully correct, complete, well-reasoned, and appropriately qualified.",
+      "3": "Mostly correct with only minor omissions or imprecision.",
+      "2": "Partially correct with meaningful omissions or weak reasoning.",
+      "1": "Mostly incorrect or substantially incomplete.",
+      "0": "Incorrect, irrelevant, fabricated, or unsafe response."
+    }
+  },
+  "SCI-012": {
+    "id": "SCI-012",
+    "domain": "science",
+    "difficulty": "hard",
+    "skill": "climate",
+    "question": "Explain why short-term weather variability does not by itself disprove long-term climate trends.",
+    "evaluation_criteria": "Applies the underlying scientific concept accurately, distinguishes evidence from inference, and states relevant assumptions or limitations.",
+    "reference_answer_points": "Assess scientific accuracy, causal reasoning, evidence versus inference, assumptions, and limitations.",
+    "scoring_rubric": {
+      "4": "Fully correct, complete, well-reasoned, and appropriately qualified.",
+      "3": "Mostly correct with only minor omissions or imprecision.",
+      "2": "Partially correct with meaningful omissions or weak reasoning.",
+      "1": "Mostly incorrect or substantially incomplete.",
+      "0": "Incorrect, irrelevant, fabricated, or unsafe response."
+    }
+  },
+  "SCI-013": {
+    "id": "SCI-013",
+    "domain": "science",
+    "difficulty": "hard",
+    "skill": "geology",
+    "question": "Why can the same rock type provide different information depending on its geological context?",
+    "evaluation_criteria": "Applies the underlying scientific concept accurately, distinguishes evidence from inference, and states relevant assumptions or limitations.",
+    "reference_answer_points": "Assess scientific accuracy, causal reasoning, evidence versus inference, assumptions, and limitations.",
+    "scoring_rubric": {
+      "4": "Fully correct, complete, well-reasoned, and appropriately qualified.",
+      "3": "Mostly correct with only minor omissions or imprecision.",
+      "2": "Partially correct with meaningful omissions or weak reasoning.",
+      "1": "Mostly incorrect or substantially incomplete.",
+      "0": "Incorrect, irrelevant, fabricated, or unsafe response."
+    }
+  },
+  "SCI-014": {
+    "id": "SCI-014",
+    "domain": "science",
+    "difficulty": "hard",
+    "skill": "evolution",
+    "question": "Explain natural selection without implying that organisms consciously choose traits.",
+    "evaluation_criteria": "Applies the underlying scientific concept accurately, distinguishes evidence from inference, and states relevant assumptions or limitations.",
+    "reference_answer_points": "Assess scientific accuracy, causal reasoning, evidence versus inference, assumptions, and limitations.",
+    "scoring_rubric": {
+      "4": "Fully correct, complete, well-reasoned, and appropriately qualified.",
+      "3": "Mostly correct with only minor omissions or imprecision.",
+      "2": "Partially correct with meaningful omissions or weak reasoning.",
+      "1": "Mostly incorrect or substantially incomplete.",
+      "0": "Incorrect, irrelevant, fabricated, or unsafe response."
+    }
+  },
+  "SCI-015": {
+    "id": "SCI-015",
+    "domain": "science",
+    "difficulty": "hard",
+    "skill": "genetics",
+    "question": "Distinguish genotype from phenotype.",
+    "evaluation_criteria": "Applies the underlying scientific concept accurately, distinguishes evidence from inference, and states relevant assumptions or limitations.",
+    "reference_answer_points": "Assess scientific accuracy, causal reasoning, evidence versus inference, assumptions, and limitations.",
+    "scoring_rubric": {
+      "4": "Fully correct, complete, well-reasoned, and appropriately qualified.",
+      "3": "Mostly correct with only minor omissions or imprecision.",
+      "2": "Partially correct with meaningful omissions or weak reasoning.",
+      "1": "Mostly incorrect or substantially incomplete.",
+      "0": "Incorrect, irrelevant, fabricated, or unsafe response."
+    }
+  },
+  "SCI-016": {
+    "id": "SCI-016",
+    "domain": "science",
+    "difficulty": "hard",
+    "skill": "ecology",
+    "question": "Explain why removing a predator can indirectly affect populations at lower trophic levels.",
+    "evaluation_criteria": "Applies the underlying scientific concept accurately, distinguishes evidence from inference, and states relevant assumptions or limitations.",
+    "reference_answer_points": "Assess scientific accuracy, causal reasoning, evidence versus inference, assumptions, and limitations.",
+    "scoring_rubric": {
+      "4": "Fully correct, complete, well-reasoned, and appropriately qualified.",
+      "3": "Mostly correct with only minor omissions or imprecision.",
+      "2": "Partially correct with meaningful omissions or weak reasoning.",
+      "1": "Mostly incorrect or substantially incomplete.",
+      "0": "Incorrect, irrelevant, fabricated, or unsafe response."
+    }
+  },
+  "SCI-017": {
+    "id": "SCI-017",
+    "domain": "science",
+    "difficulty": "hard",
+    "skill": "scientific_models",
+    "question": "Why can a scientific model be useful even though it is a simplification of reality?",
+    "evaluation_criteria": "Applies the underlying scientific concept accurately, distinguishes evidence from inference, and states relevant assumptions or limitations.",
+    "reference_answer_points": "Assess scientific accuracy, causal reasoning, evidence versus inference, assumptions, and limitations.",
+    "scoring_rubric": {
+      "4": "Fully correct, complete, well-reasoned, and appropriately qualified.",
+      "3": "Mostly correct with only minor omissions or imprecision.",
+      "2": "Partially correct with meaningful omissions or weak reasoning.",
+      "1": "Mostly incorrect or substantially incomplete.",
+      "0": "Incorrect, irrelevant, fabricated, or unsafe response."
+    }
+  },
+  "SCI-018": {
+    "id": "SCI-018",
+    "domain": "science",
+    "difficulty": "hard",
+    "skill": "causation",
+    "question": "Describe a situation in which an experiment would provide stronger evidence for causation than an observational study.",
+    "evaluation_criteria": "Applies the underlying scientific concept accurately, distinguishes evidence from inference, and states relevant assumptions or limitations.",
+    "reference_answer_points": "Assess scientific accuracy, causal reasoning, evidence versus inference, assumptions, and limitations.",
+    "scoring_rubric": {
+      "4": "Fully correct, complete, well-reasoned, and appropriately qualified.",
+      "3": "Mostly correct with only minor omissions or imprecision.",
+      "2": "Partially correct with meaningful omissions or weak reasoning.",
+      "1": "Mostly incorrect or substantially incomplete.",
+      "0": "Incorrect, irrelevant, fabricated, or unsafe response."
+    }
+  },
+  "SCI-019": {
+    "id": "SCI-019",
+    "domain": "science",
+    "difficulty": "hard",
+    "skill": "uncertainty",
+    "question": "Why does measurement uncertainty not mean that scientific measurement is useless?",
+    "evaluation_criteria": "Applies the underlying scientific concept accurately, distinguishes evidence from inference, and states relevant assumptions or limitations.",
+    "reference_answer_points": "Assess scientific accuracy, causal reasoning, evidence versus inference, assumptions, and limitations.",
+    "scoring_rubric": {
+      "4": "Fully correct, complete, well-reasoned, and appropriately qualified.",
+      "3": "Mostly correct with only minor omissions or imprecision.",
+      "2": "Partially correct with meaningful omissions or weak reasoning.",
+      "1": "Mostly incorrect or substantially incomplete.",
+      "0": "Incorrect, irrelevant, fabricated, or unsafe response."
+    }
+  },
+  "SCI-020": {
+    "id": "SCI-020",
+    "domain": "science",
+    "difficulty": "hard",
+    "skill": "peer_review",
+    "question": "What does peer review accomplish, and what are its limitations?",
+    "evaluation_criteria": "Applies the underlying scientific concept accurately, distinguishes evidence from inference, and states relevant assumptions or limitations.",
+    "reference_answer_points": "Assess scientific accuracy, causal reasoning, evidence versus inference, assumptions, and limitations.",
+    "scoring_rubric": {
+      "4": "Fully correct, complete, well-reasoned, and appropriately qualified.",
+      "3": "Mostly correct with only minor omissions or imprecision.",
+      "2": "Partially correct with meaningful omissions or weak reasoning.",
+      "1": "Mostly incorrect or substantially incomplete.",
+      "0": "Incorrect, irrelevant, fabricated, or unsafe response."
+    }
+  },
+  "SCI-021": {
+    "id": "SCI-021",
+    "domain": "science",
+    "difficulty": "hard",
+    "skill": "physics",
+    "question": "Explain why energy conservation does not imply that every process is reversible.",
+    "evaluation_criteria": "Applies the underlying scientific concept accurately, distinguishes evidence from inference, and states relevant assumptions or limitations.",
+    "reference_answer_points": "Assess scientific accuracy, causal reasoning, evidence versus inference, assumptions, and limitations.",
+    "scoring_rubric": {
+      "4": "Fully correct, complete, well-reasoned, and appropriately qualified.",
+      "3": "Mostly correct with only minor omissions or imprecision.",
+      "2": "Partially correct with meaningful omissions or weak reasoning.",
+      "1": "Mostly incorrect or substantially incomplete.",
+      "0": "Incorrect, irrelevant, fabricated, or unsafe response."
+    }
+  },
+  "SCI-022": {
+    "id": "SCI-022",
+    "domain": "science",
+    "difficulty": "hard",
+    "skill": "chemistry",
+    "question": "Why can a catalyst speed up a reaction without being consumed in the overall reaction?",
+    "evaluation_criteria": "Applies the underlying scientific concept accurately, distinguishes evidence from inference, and states relevant assumptions or limitations.",
+    "reference_answer_points": "Assess scientific accuracy, causal reasoning, evidence versus inference, assumptions, and limitations.",
+    "scoring_rubric": {
+      "4": "Fully correct, complete, well-reasoned, and appropriately qualified.",
+      "3": "Mostly correct with only minor omissions or imprecision.",
+      "2": "Partially correct with meaningful omissions or weak reasoning.",
+      "1": "Mostly incorrect or substantially incomplete.",
+      "0": "Incorrect, irrelevant, fabricated, or unsafe response."
+    }
+  },
+  "SCI-023": {
+    "id": "SCI-023",
+    "domain": "science",
+    "difficulty": "hard",
+    "skill": "biology",
+    "question": "Why is a single study usually insufficient to establish a broad biological claim?",
+    "evaluation_criteria": "Applies the underlying scientific concept accurately, distinguishes evidence from inference, and states relevant assumptions or limitations.",
+    "reference_answer_points": "Assess scientific accuracy, causal reasoning, evidence versus inference, assumptions, and limitations.",
+    "scoring_rubric": {
+      "4": "Fully correct, complete, well-reasoned, and appropriately qualified.",
+      "3": "Mostly correct with only minor omissions or imprecision.",
+      "2": "Partially correct with meaningful omissions or weak reasoning.",
+      "1": "Mostly incorrect or substantially incomplete.",
+      "0": "Incorrect, irrelevant, fabricated, or unsafe response."
+    }
+  },
+  "SCI-024": {
+    "id": "SCI-024",
+    "domain": "science",
+    "difficulty": "hard",
+    "skill": "statistics",
+    "question": "Explain p-values at a high level and identify one common misconception about them.",
+    "evaluation_criteria": "Applies the underlying scientific concept accurately, distinguishes evidence from inference, and states relevant assumptions or limitations.",
+    "reference_answer_points": "Assess scientific accuracy, causal reasoning, evidence versus inference, assumptions, and limitations.",
+    "scoring_rubric": {
+      "4": "Fully correct, complete, well-reasoned, and appropriately qualified.",
+      "3": "Mostly correct with only minor omissions or imprecision.",
+      "2": "Partially correct with meaningful omissions or weak reasoning.",
+      "1": "Mostly incorrect or substantially incomplete.",
+      "0": "Incorrect, irrelevant, fabricated, or unsafe response."
+    }
+  },
+  "SCI-025": {
+    "id": "SCI-025",
+    "domain": "science",
+    "difficulty": "hard",
+    "skill": "scientific_reasoning",
+    "question": "A result conflicts with a well-established theory. Explain how scientists should respond without either blindly rejecting the result or immediately discarding the theory.",
+    "evaluation_criteria": "Applies the underlying scientific concept accurately, distinguishes evidence from inference, and states relevant assumptions or limitations.",
+    "reference_answer_points": "Assess scientific accuracy, causal reasoning, evidence versus inference, assumptions, and limitations.",
+    "scoring_rubric": {
+      "4": "Fully correct, complete, well-reasoned, and appropriately qualified.",
+      "3": "Mostly correct with only minor omissions or imprecision.",
+      "2": "Partially correct with meaningful omissions or weak reasoning.",
+      "1": "Mostly incorrect or substantially incomplete.",
+      "0": "Incorrect, irrelevant, fabricated, or unsafe response."
+    }
+  },
+  "HEA-025": {
+    "id": "HEA-025",
+    "domain": "healthcare",
+    "difficulty": "hard",
+    "skill": "diagnostic_reasoning",
+    "question": "A screening test is highly sensitive but not perfectly specific. Explain why some people with positive results may not actually have the condition being screened for.",
+    "evaluation_criteria": "Explains the distinction between sensitivity and specificity, recognizes that false positives can occur, and explains why the interpretation of a positive screening result depends on context such as disease prevalence or pre-test probability.",
+    "reference_answer_points": "Distinguishes sensitivity from specificity, explains false positives, and notes the importance of prevalence or pre-test probability when interpreting a positive screening result.",
+    "scoring_rubric": {
+      "4": "Fully correct, complete, well-reasoned, and appropriately qualified.",
+      "3": "Mostly correct with only minor omissions or imprecision.",
+      "2": "Partially correct with meaningful omissions or weak reasoning.",
+      "1": "Mostly incorrect or substantially incomplete.",
+      "0": "Incorrect, irrelevant, fabricated, or unsafe response."
+    }
+  }
+}
